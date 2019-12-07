@@ -1,34 +1,35 @@
 module.exports = {
   siteMetadata: {
     title: `Andreas Eracleous`,
-    profession: `Front end web developer`,
+    occupation: `Front end web developer`,
     description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    siteUrl: `https://andreaseracleous.com`,
+    author: `@AndrewEracleous`,
     menuLinks:[
       {
-      name:'home',
+      name:'Home',
       link:'/'
       },
-      {
-      name:'work',
+      /*{
+      name:'Work',
       link:'/work'
-      },
-      {
-      name:'services',
+      },*/
+      /*{
+      name:'Services',
       link:'/services'
-      }, 
+      },*/ 
       {
-      name:'blog',
+      name:'Blog',
       link:'/blog'
       },
       {
-      name:'about',
+      name:'About',
       link:'/about'
       },
-      {
-      name:'contact',
+      /*{
+      name:'Contact',
       link:'/contact'
-      },                                      
+      },*/                                      
     ]
   },
   plugins: [
@@ -40,6 +41,82 @@ module.exports = {
         path: `${__dirname}/src/assets/img`,
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `markdown-pages`,
+        path: `${__dirname}/src/markdown-pages`,
+      },      
+    },
+    {
+      resolve: `gatsby-plugin-breadcrumb`,
+      options: {
+        defaultCrumb: {
+          location: {
+            state: { crumbClicked: false },
+            pathname: "/",
+          },
+          crumbLabel: "Home",
+          crumbSeparator: " / ",
+        },
+        // required to enable classNames
+        useClassNames: true,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-feed`,
+      options: {
+        query: `
+          {
+            site {
+              siteMetadata {
+                title
+                description
+                siteUrl
+                site_url: siteUrl
+              }
+            }
+          }
+        `,
+        feeds: [
+          {
+            serialize: ({ query: { site, allMarkdownRemark } }) => {
+              return allMarkdownRemark.edges.map(edge => {
+                return Object.assign({}, edge.node.frontmatter, {
+                  description: edge.node.excerpt,
+                  date: edge.node.frontmatter.date,
+                  url: site.siteMetadata.siteUrl + edge.node.fields.slug,
+                  guid: site.siteMetadata.siteUrl + edge.node.fields.slug,
+                  custom_elements: [{ "content:encoded": edge.node.html }],
+                })
+              })
+            },
+            query: `
+              {
+                allMarkdownRemark(
+                  sort: { order: DESC, fields: [frontmatter___date] },
+                ) {
+                  edges {
+                    node {
+                      excerpt
+                      html
+                      fields { slug }
+                      frontmatter {
+                        title
+                        date
+                      }
+                    }
+                  }
+                }
+              }
+            `,
+            output: "/rss.xml",
+            title: "Your Site's RSS Feed",
+          },
+        ],
+      },
+    },    
+    `gatsby-transformer-remark`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {

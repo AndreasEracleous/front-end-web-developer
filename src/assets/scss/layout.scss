@@ -1,0 +1,36 @@
+body {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 1rem;
+    font-weight: normal;
+    background-color: #f8f9fa;
+}
+.bg-lightgray {
+    background-color: #f0f0f0;
+}
+.page-header {
+    position: relative;
+}
+.gray-box-2d {
+    padding: 15px;
+    background: rgba(0,0,0,0.03);
+    -webkit-box-shadow: 4px 4px 0px rgba(0,0,0,0.1);
+    box-shadow: 4px 4px 0px rgba(0,0,0,0.1);
+}
+.bg-opacity {
+    background-color: rgba(0,0,0,0.1);
+}
+.breadcrumb {
+    display: inline;
+    font-weight: 300;
+}
+.breadcrumb__separator {
+    color: #BBDEFB;
+}
+.breadcrumb__link,
+.breadcrumb__link:hover {
+    color: #BBDEFB;
+    text-decoration: none;
+}
+.breadcrumb__link__active {
+    color: #fff;
+}

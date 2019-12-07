@@ -1,0 +1,63 @@
+import React from "react"
+import { graphql } from "gatsby"
+import { Breadcrumb } from 'gatsby-plugin-breadcrumb'
+
+import Image from "../components/image"
+import PostLink from "../components/post-link"
+import Layout from "../components/layout"
+import SEO from "../components/seo"
+const BlogPage = ({
+  location,
+  data: {
+    allMarkdownRemark: { edges },
+  },
+}) => {
+  const Posts = edges
+    .filter(edge => !!edge.node.frontmatter.date) // You can filter your posts based on some criteria
+    .map(edge => <PostLink key={edge.node.id} post={edge.node} />)
+  return <Layout>
+            <SEO title="Blog" />
+            <div className="bg-primary py-3">
+              <div className="container text-center text-white">
+                <h1 class="font-weight-normal">Blog</h1>
+                <h2 class="lead">Practical tips for responsive web design.</h2>
+                
+                <Breadcrumb location={location} crumbLabel="Blog" />
+              
+              </div>
+            </div>
+            <div className="container">
+                <div className="row">
+                    <div className="col-lg">
+                        {Posts}
+                    </div>
+                    <div className="col-lg-4 mt-5">
+                        <div className="bg-lightgray p-3 text-center ml-xl-5">
+                            <Image filename="common/andreas.jpg" alt="" className="rounded-circle img-fluid mx-auto mb-3" style={{maxWidth:'130px'}} />
+                            <p>Hi I'm <strong>Andreas Eracleous</strong> and I'm a <strong>Front-End Web Developer</strong>. Learn more <a href="/about">about me</a>.</p> 
+						    <p>Welcome to my blog. I hope you find something useful here.</p>
+						    <p><a href="https://twitter.com/AndrewEracleous"><i class="fab fa-twitter size-20"></i> Follow me on Twitter</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </Layout>
+    }
+export default BlogPage
+export const pageQuery = graphql`
+  query {
+    allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
+      edges {
+        node {
+          id
+          excerpt(pruneLength: 250)
+          frontmatter {
+            date(formatString: "MMMM DD, YYYY")
+            path
+            title
+          }
+        }
+      }
+    }
+  }
+`

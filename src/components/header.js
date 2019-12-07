@@ -2,36 +2,23 @@ import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
 
-const Header = ({ siteTitle, siteProfession, menuLinks }) => (
-  <header className="page-header">
-    <div className="container">
-      <Link to="/">
-        {siteTitle}
-        {siteProfession}
-      </Link>
-      <h1>Are you looking for expert to convert your design into a web or a mobile app?</h1>
-      <h2>
+import Image from "../components/image"
+import Menu from '../components/menu'
+import "../assets/scss/header.scss"
 
-      </h2>
-      <nav>
-            <ul>
-              {menuLinks.map(link => (
-                <li
-                  key={link.name}
-                  style={{
-                    listStyleType: `none`,
-                    padding: `1rem`,
-                  }}
-                >
-                  <Link style={{ color: `white` }} to={link.link}>
-                    {link.name}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </nav>
+const Header = ({ siteTitle, siteOccupation, menuLinks }) => (
+  //Here goes logo, navigation, etc.
+  <header className="page-header bg-primary py-3">
+    <div className="container">
+      <div className="d-flex justify-content-between">
+        <Link to="/" className="text-decoration-none text-secondary">
+          <span className="h5 text-capitalize font-weight-lighter">{siteTitle}</span>
+          <span className="small text-uppercase d-block font-weight-lighter">{siteOccupation}</span>
+        </Link>
+        <Menu menuLinks={menuLinks} />
+      </div>
     </div>
-  </header>
+  </header>  
 )
 
 Header.propTypes = {
@@ -43,11 +30,11 @@ Header.defaultProps = {
 }
 
 Header.propTypes = {
-  siteProfession: PropTypes.string,
+  siteOccupation: PropTypes.string,
 }
 
 Header.defaultProps = {
-  siteProfession: ``,
+  siteOccupation: ``,
 }
 
 export default Header
