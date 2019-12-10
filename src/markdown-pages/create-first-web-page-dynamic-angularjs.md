@@ -9,7 +9,7 @@ First of all you have to go at <a href="angularjs.org">angularjs.org</a> websit
 
 Then embed it into your HTML file like code below:
 <pre>
-<code class="language-markup">&lt;!DOCTYPE html&gt;
+<code className="language-markup">&lt;!DOCTYPE html&gt;
 &lt;html ng-app&gt;
 
 &lt;head&gt;
@@ -24,5 +24,5 @@ Then embed it into your HTML file like code below:
 
 &lt;/html&gt;</code></pre>
 Output:
-<p data-height="300" data-theme-id="9796" data-slug-hash="VYmOVP" data-default-tab="result" data-user="Sp00ky" data-pen-title="First page with AngularJS" class="codepen">See the Pen <a href="https://codepen.io/Sp00ky/pen/VYmOVP/">First page with AngularJS</a> by Andreas Eracleous (<a href="https://codepen.io/Sp00ky">@Sp00ky</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+<p data-height="300" data-theme-id="9796" data-slug-hash="VYmOVP" data-default-tab="result" data-user="Sp00ky" data-pen-title="First page with AngularJS" className="codepen">See the Pen <a href="https://codepen.io/Sp00ky/pen/VYmOVP/">First page with AngularJS</a> by Andreas Eracleous (<a href="https://codepen.io/Sp00ky">@Sp00ky</a>) on <a href="https://codepen.io">CodePen</a>.</p>
 <script async src="https://static.codepen.io/assets/embed/ei.js"></script>

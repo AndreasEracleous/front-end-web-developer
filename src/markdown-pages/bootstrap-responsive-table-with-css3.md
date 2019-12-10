@@ -15,9 +15,9 @@ You can create a responsive tables with Bootstrap by wrapping any <em>
 
 in <em>.table-responsive </em>like the below example:
 <pre>
-<code class="language-markup">
+<code className="language-markup">
 
-	&lt;div class="table-responsive"&gt;
+	&lt;div className="table-responsive"&gt;
 	 ...
 	&lt;/div&gt;
 
@@ -34,7 +34,7 @@ The result has as following:
 I set an attribute on the <em><strong>td</strong></em> element of the <em><strong>table</strong></em> and then using the content property and attribute <em><strong>attr()</strong></em> function for reading the content of the element.
 
 <pre lang="lang">
-<code class="language-css">
+<code className="language-css">
 [row-header]:before {
 	content: attr(row-header);
 	display: inline-block;
@@ -49,5 +49,5 @@ I set an attribute on the <em><strong>td</strong></em> element of the <em><stron
 
 Below you can see the Unresponsive Table, Responsive Table with Bootstrap and Responsive Table with Custom Style code:
 
-<p data-height="300" data-theme-id="9796" data-slug-hash="wGjpZX" data-default-tab="result" data-user="Sp00ky" data-pen-title="Bootstrap Responsive Table" class="codepen">See the Pen <a href="https://codepen.io/Sp00ky/pen/wGjpZX/">Bootstrap Responsive Table</a> by Andreas Eracleous (<a href="https://codepen.io/Sp00ky">@Sp00ky</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+<p data-height="300" data-theme-id="9796" data-slug-hash="wGjpZX" data-default-tab="result" data-user="Sp00ky" data-pen-title="Bootstrap Responsive Table" className="codepen">See the Pen <a href="https://codepen.io/Sp00ky/pen/wGjpZX/">Bootstrap Responsive Table</a> by Andreas Eracleous (<a href="https://codepen.io/Sp00ky">@Sp00ky</a>) on <a href="https://codepen.io">CodePen</a>.</p>
 <script async src="https://static.codepen.io/assets/embed/ei.js"></script>

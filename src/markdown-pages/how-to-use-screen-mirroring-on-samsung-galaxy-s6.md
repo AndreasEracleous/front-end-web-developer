@@ -9,7 +9,7 @@ I was trying figure out how I can share my screen on my Sony Bravia TV and it to
 
 <h2>How to enable screen mirroring on Samsung Galaxy S6</h2>
 <a href="{{ site.baseurl }}/assets/img/blog/2015/06/Samsung-Galaxy-S6-quick-connnect.jpg">
-	<img data-src="{{ site.baseurl }}/assets/img/blog/2015/06/Samsung-Galaxy-s6.png" alt="Samsung Galaxy S6-quick-connnect" class="lazyload img-fluid d-block mx-auto my-5" />
+	<img data-src="{{ site.baseurl }}/assets/img/blog/2015/06/Samsung-Galaxy-s6.png" alt="Samsung Galaxy S6-quick-connnect" className=ame="lazyload img-fluid d-block mx-auto my-5" />
 </a>
 
 Just pull down the notification bar and then click on "<strong>Quick Connect</strong>" and then it tries to find device that currently is connected via screen mirroring.

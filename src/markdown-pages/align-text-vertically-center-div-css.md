@@ -15,5 +15,5 @@ Below are the properties that can use to vertical align a text in the middle of 
  	<li>display</li>
 </ul>
 
-<p data-height="300" data-theme-id="9796" data-slug-hash="VYBLrN" data-default-tab="result" data-user="Sp00ky" data-pen-title="Align text vertically center" class="codepen">See the Pen <a href="https://codepen.io/Sp00ky/pen/VYBLrN/">Align text vertically center</a> by Andreas Eracleous (<a href="https://codepen.io/Sp00ky">@Sp00ky</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+<p data-height="300" data-theme-id="9796" data-slug-hash="VYBLrN" data-default-tab="result" data-user="Sp00ky" data-pen-title="Align text vertically center" className="codepen">See the Pen <a href="https://codepen.io/Sp00ky/pen/VYBLrN/">Align text vertically center</a> by Andreas Eracleous (<a href="https://codepen.io/Sp00ky">@Sp00ky</a>) on <a href="https://codepen.io">CodePen</a>.</p>
 <script async src="https://static.codepen.io/assets/embed/ei.js"></script>

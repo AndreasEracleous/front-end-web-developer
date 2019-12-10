@@ -12,7 +12,7 @@ In this post, I made a <strong>Checkout Progress Bar</strong> without images jus
 Usually a <strong>Checkout Progress Bar</strong>  you can see it when you are going to buy some products on a <em>eCommerce store</em> like Amazon, eBay and so on.
 
 Few common steps are following:
-<div class="fusion-table table-1">
+<div className="fusion-table table-1">
 <table width="100%">
 <tbody>
 <tr>
@@ -40,5 +40,5 @@ Few common steps are following:
 </div>
 
 
-<p data-height="300" data-theme-id="9796" data-slug-hash="wGXQBb" data-default-tab="result" data-user="Sp00ky" data-pen-title="Checkout Progress Bar" class="codepen">See the Pen <a href="https://codepen.io/Sp00ky/pen/wGXQBb/">Checkout Progress Bar</a> by Andreas Eracleous (<a href="https://codepen.io/Sp00ky">@Sp00ky</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+<p data-height="300" data-theme-id="9796" data-slug-hash="wGXQBb" data-default-tab="result" data-user="Sp00ky" data-pen-title="Checkout Progress Bar" className="codepen">See the Pen <a href="https://codepen.io/Sp00ky/pen/wGXQBb/">Checkout Progress Bar</a> by Andreas Eracleous (<a href="https://codepen.io/Sp00ky">@Sp00ky</a>) on <a href="https://codepen.io">CodePen</a>.</p>
 <script async src="https://static.codepen.io/assets/embed/ei.js"></script>

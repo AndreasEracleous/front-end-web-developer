@@ -1,8 +1,16 @@
+/**
+ * Configure your Gatsby site with this file.
+ *
+ * See: https://www.gatsbyjs.org/docs/gatsby-config/
+ */
+
+require("dotenv").config()
+
 module.exports = {
   siteMetadata: {
     title: `Andreas Eracleous`,
     occupation: `Front end web developer`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
+    description: `Andreas is a freelance Front-end Web Developer who is expert in converting PSD to Bootstrap website, HTML, CSS, JavaScript code and he is experienced with optimizing website load speed. Also, he is available for development jobs for helping you with your website and progressive web app.`,
     siteUrl: `https://andreaseracleous.com`,
     author: `@AndrewEracleous`,
     menuLinks:[
@@ -10,14 +18,14 @@ module.exports = {
       name:'Home',
       link:'/'
       },
-      /*{
+      {
       name:'Work',
-      link:'/work'
-      },*/
-      /*{
+      link:'/#work'
+      },
+      {
       name:'Services',
-      link:'/services'
-      },*/ 
+      link:'/#services'
+      },
       {
       name:'Blog',
       link:'/blog'
@@ -26,11 +34,33 @@ module.exports = {
       name:'About',
       link:'/about'
       },
-      /*{
+      {
       name:'Contact',
-      link:'/contact'
-      },*/                                      
-    ]
+      link:'/#contact'
+      },                                     
+    ],
+    socialLinks: [
+      {
+        name: 'Facebook',
+        link: 'https://www.facebook.com/andrew.eracleous'
+      },
+      {
+        name: 'Twitter',
+        link: 'https://twitter.com/AndrewEracleous'
+      },
+      {
+        name: 'Github',
+        link: 'https://github.com/AndreasEracleous'
+      },
+      {
+        name: 'Linkedin',
+        link: 'https://cy.linkedin.com/in/andreaseracleous'
+      },
+      {
+        name: 'Instagram',
+        link: 'https://www.instagram.com/sp0_0ky'
+      },            
+    ],   
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -53,7 +83,6 @@ module.exports = {
       options: {
         defaultCrumb: {
           location: {
-            state: { crumbClicked: false },
             pathname: "/",
           },
           crumbLabel: "Home",
@@ -115,20 +144,55 @@ module.exports = {
           },
         ],
       },
+    },      
+    {
+      resolve: `gatsby-plugin-segment-js`,
+      options: {
+          // your segment write key for your production environment
+          // when process.env.NODE_ENV === 'production'
+          // required; non-empty string
+          prodKey: process.env.GATSBY_SEGMENT_WRITE_KEY,
+
+          // if you have a development env for your segment account, paste that key here
+          // when process.env.NODE_ENV === 'development'
+          // optional; non-empty string
+          devKey: process.env.GATSBY_SEGMENT_WRITE_KEY,
+
+          // boolean (defaults to false) on whether you want
+          // to include analytics.page() automatically
+          // if false, see below on how to track pageviews manually
+          trackPage: false,
+
+          // boolean (defaults to false) on whether to load segment
+          // after a user action (scroll or route change) + delay
+          // this will bring down your TTI but you might miss 1 second of data.
+          // see here for more info on TTI: https://github.com/GoogleChrome/lighthouse/blob/master/docs/scoring.md#performance
+          delayLoad: false,
+
+          // time to wait after scroll action in ms. Defaults to 1000ms
+          delayLoadTime: 1000
+      }
     },    
+    `gatsby-plugin-sitemap`,
     `gatsby-transformer-remark`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `Andreas Eracleous`,
+        short_name: `Andreas Eracleous`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
+        background_color: `#0D47A1`,
+        theme_color: `#0D47A1`,
         display: `minimal-ui`,
-        icon: `src/assets/img/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/assets/img/icon.png`, // This path is relative to the root of the site.
+      },
+    },
+    {
+      resolve: `gatsby-plugin-offline`,
+      options: {
+        precachePages: [`/`, `/about/`, `/blog`, `/blog/*`],
       },
     },
     {

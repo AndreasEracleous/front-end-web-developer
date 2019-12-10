@@ -30,5 +30,5 @@ I used the Modal event function "<strong>hidden.bs.modal</strong>" as they menti
     }
   });</pre> 
 
-<p data-height="300" data-theme-id="9796" data-slug-hash="PwLNbm" data-default-tab="result" data-user="Sp00ky" data-pen-title="Twitter Bootstrap Modal stop Youtube video" class="codepen">See the Pen <a href="https://codepen.io/Sp00ky/pen/PwLNbm/">Twitter Bootstrap Modal stop Youtube video</a> by Andreas Eracleous (<a href="https://codepen.io/Sp00ky">@Sp00ky</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+<p data-height="300" data-theme-id="9796" data-slug-hash="PwLNbm" data-default-tab="result" data-user="Sp00ky" data-pen-title="Twitter Bootstrap Modal stop Youtube video" className="codepen">See the Pen <a href="https://codepen.io/Sp00ky/pen/PwLNbm/">Twitter Bootstrap Modal stop Youtube video</a> by Andreas Eracleous (<a href="https://codepen.io/Sp00ky">@Sp00ky</a>) on <a href="https://codepen.io">CodePen</a>.</p>
 <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
