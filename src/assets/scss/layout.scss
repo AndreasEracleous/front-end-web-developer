@@ -43,7 +43,7 @@ body::-webkit-scrollbar {
     background-color: #f0f0f0;
 }
 .page-header {
-    position: relative;
+    box-shadow: 0 1px 3px rgba(0,0,0,.2);
 }
 .gray-box-2d {
     padding: 15px;
@@ -57,7 +57,7 @@ body::-webkit-scrollbar {
 .breadcrumb {
     display: inline;
     font-size: 75%;
-    font-weight: 300;
+    font-weight: normal;
 }
 .breadcrumb__separator {
     color: #BBDEFB;

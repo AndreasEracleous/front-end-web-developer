@@ -1,15 +1,14 @@
 import React from "react"
 import Layout from "../components/layout"
+import HeroHeader from "../components/hero-header"
 import SEO from "../components/seo"
 
 const AboutPage = ({location}) => (
 <Layout>
     <SEO title="About Me" />
-    <div className="bg-primary py-3">
-        <div className="container text-center text-white">
+    <HeroHeader className="text-center text-white">
         <h1 className="font-weight-normal">About Me</h1>
-        </div>
-    </div>   
+    </HeroHeader>   
     <div className="container py-5">
         <h2 className="h4 font-weight-normal text-uppercase mb-4">Who Am I?</h2>
         <p>Hi, I’m Andreas Eracleous and I like to work independently as Freelance Front-end Web Developer by helping companies and individuals collaborate remotely. I live in Cyprus in a small beautiful island.</p>

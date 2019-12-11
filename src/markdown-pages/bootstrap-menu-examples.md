@@ -13,8 +13,8 @@ I have used <strong>flex CSS property</strong> to make all their submenus to h
 
 You can find the CSS code below and see how you can change the <em>Bootstrap NavBar Breakpoint</em>.
 
-<pre className=ame="lang:default decode:true">
-<code className=ame="language-css">
+<pre class=ame="lang:default decode:true">
+<code class=ame="language-css">
 @media (max-width: 991px) {
     .navbar-header {
         float: none;
@@ -55,5 +55,5 @@ You can find the CSS code below and see how you can change the <em>Bootstrap Nav
 </code>
 </pre>
 
-<p data-height="300" data-theme-id="9796" data-slug-hash="pyXypB" data-default-tab="result" data-user="Sp00ky" data-pen-title="Bootstrap Menu Example - 1" className=ame="codepen">See the Pen <a href="https://codepen.io/Sp00ky/pen/pyXypB/">Bootstrap Menu Example - 1</a> by Andreas Eracleous (<a href="https://codepen.io/Sp00ky">@Sp00ky</a>) on <a href="https://codepen.io">CodePen</a>.
+<p data-height="300" data-theme-id="9796" data-slug-hash="pyXypB" data-default-tab="result" data-user="Sp00ky" data-pen-title="Bootstrap Menu Example - 1" class=ame="codepen">See the Pen <a href="https://codepen.io/Sp00ky/pen/pyXypB/">Bootstrap Menu Example - 1</a> by Andreas Eracleous (<a href="https://codepen.io/Sp00ky">@Sp00ky</a>) on <a href="https://codepen.io">CodePen</a>.
 <script async src="https://static.codepen.io/assets/embed/ei.js"></script>

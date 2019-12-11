@@ -10,5 +10,5 @@ I have used few of social icons as you can see: <em>Facebook</em>, <em>Twitter</
 
 As you can see below:
 
-<p data-height="300" data-theme-id="9796" data-slug-hash="PwqRYW" data-default-tab="result" data-user="Sp00ky" data-pen-title="Social Network Icons" className="codepen">See the Pen <a href="https://codepen.io/Sp00ky/pen/PwqRYW/">Social Network Icons</a> by Andreas Eracleous (<a href="https://codepen.io/Sp00ky">@Sp00ky</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+<p data-height="300" data-theme-id="9796" data-slug-hash="PwqRYW" data-default-tab="result" data-user="Sp00ky" data-pen-title="Social Network Icons" class="codepen">See the Pen <a href="https://codepen.io/Sp00ky/pen/PwqRYW/">Social Network Icons</a> by Andreas Eracleous (<a href="https://codepen.io/Sp00ky">@Sp00ky</a>) on <a href="https://codepen.io">CodePen</a>.</p>
 <script async src="https://static.codepen.io/assets/embed/ei.js"></script>

@@ -24,5 +24,5 @@ Next Javascript retrieves DOM buttons object from array list and go through un
 
 Example:
 
-<p data-height="300" data-theme-id="9796" data-slug-hash="MeewxY" data-default-tab="result" data-user="Sp00ky" data-pen-title="Bootstrap Equal Height Buttons" className="codepen">See the Pen <a href="https://codepen.io/Sp00ky/pen/MeewxY/">Bootstrap Equal Height Buttons</a> by Andreas Eracleous (<a href="https://codepen.io/Sp00ky">@Sp00ky</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+<p data-height="300" data-theme-id="9796" data-slug-hash="MeewxY" data-default-tab="result" data-user="Sp00ky" data-pen-title="Bootstrap Equal Height Buttons" class="codepen">See the Pen <a href="https://codepen.io/Sp00ky/pen/MeewxY/">Bootstrap Equal Height Buttons</a> by Andreas Eracleous (<a href="https://codepen.io/Sp00ky">@Sp00ky</a>) on <a href="https://codepen.io">CodePen</a>.</p>
 <script async src="https://static.codepen.io/assets/embed/ei.js"></script>

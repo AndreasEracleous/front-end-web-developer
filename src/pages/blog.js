@@ -6,6 +6,7 @@ import SocialIcons from '../components/social-icons'
 import {FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faRss} from '@fortawesome/pro-light-svg-icons'
 import Image from "../components/image"
+import HeroHeader from "../components/hero-header"
 import PostLink from "../components/post-link"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -20,13 +21,11 @@ const BlogPage = ({
     .map(edge => <PostLink key={edge.node.id} post={edge.node} />)
   return <Layout>
             <SEO title="Blog" />
-            <div className="bg-primary py-3">
-              <div className="container text-center text-white">
+            <HeroHeader className="text-center text-white">
                 <h1 className="font-weight-normal">Blog <span className="small"><a href="/rss.xml" target="_blank" rel="noopener noreferrer" className="text-warning"><FontAwesomeIcon icon={faRss} size="sm" /></a></span></h1>
                 <h2 className="lead">Practical tips for responsive web design.</h2>
                 <Breadcrumb location={location} crumbLabel="Blog" />
-              </div>
-            </div>
+            </HeroHeader>
             <div className="container">
                 <div className="row">
                     <div className="col-lg">

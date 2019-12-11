@@ -1,15 +1,14 @@
 import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import HeroHeader from "../components/hero-header"
 
 const CookiesPolicyPage = ({location}) => (
     <Layout>
     <SEO title="Cookies Policy" />
-    <div className="bg-primary py-3">
-        <div className="container text-center text-white">
+    <HeroHeader className="text-center text-white">
         <h1 className="font-weight-normal">Cookies Policy</h1>
-        </div>
-    </div>       
+     </HeroHeader>
     <div className="container py-5">
         <p>Last updated: February 04, 2017</p>
         <p>Andreas Eracleous ("us", "we", or "our") uses cookies on the https://andreaseracleous.com/ website (the "Service"). By using the Service, you consent to the use of cookies.</p>

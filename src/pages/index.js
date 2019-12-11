@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 import PostLink from "../components/post-link"
-
+import HeroHeader from "../components/hero-header";
 import Image from "../components/image"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -12,9 +12,8 @@ import {faDesktop, faRocket} from '@fortawesome/pro-light-svg-icons'
 
 const IndexPage = () => (
 <Layout>
-    <SEO title="Home" />
-    <div className="hero-banner bg-primary">
-        <div className="container">
+    <SEO title="Home" />   
+        <HeroHeader className="pb-4">
             <div className="row py-5 text-white">
                 <div className="col-lg-8">
                     <h1 className="font-weight-normal text-uppercase">Andreas Eracleous</h1>
@@ -31,13 +30,13 @@ const IndexPage = () => (
                     <Image filename="home/responsive-web-design.png" alt="" className="d-block img-fluid ml-auto mr-auto mr-lg-0 ml-lg-auto" style={{maxWidth: '380px'}} />
                 </div>
             </div>
-        </div>
-        <div className="bg-opacity text-secondary mt-4 py-2">
+        </HeroHeader>
+        <div className="bg-opacity text-secondary py-2 text-dark">
             <div className="d-flex container">
-                <p className="font-weight-light my-0">Top Rated Freelancer on <span className="text-success">UpWork</span></p>
+                <p className="font-weight-light my-0">Top Rated Freelancer on <span className="text-primary">UpWork</span></p>
             </div>
-        </div>
-    </div>
+        </div>     
+
     <section className="mt-5">
         <article className="container">
 

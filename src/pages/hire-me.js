@@ -3,15 +3,14 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Image from "../components/image"
+import HeroHeader from "../components/hero-header"
 
 const HireMePage = () => (
   <Layout>
     <SEO title="How To Hire Me Directly For Your Job" />
-    <div className="bg-primary py-3">
-        <div className="container text-center text-white">
+    <HeroHeader className="text-center text-white">
         <h1 className="font-weight-normal">How To Hire Me Directly For Your Job</h1>
-        </div>
-    </div>       
+   </HeroHeader>
     <div className="container py-5">
         <Image filename="pages/hire-me.png" alt="Hire me" className="img-fluid" style={{maxWidth: '300px'}} />
         <p>As a freelancer, I am using UpWork platform for my works, where I can collaborate remotely, chat and share files over there in order to have all my clients in one place.</p>

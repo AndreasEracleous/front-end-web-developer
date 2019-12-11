@@ -1,13 +1,11 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
-
 import Menu from '../components/menu'
-//import "../assets/scss/header.scss"
 
 const Header = ({ siteTitle, siteOccupation, menuLinks }) => (
   //Here goes logo, navigation, etc.
-  <header id="goTop" className="page-header bg-primary py-3">
+  <header id="goTop" className="pt-3 bg-primary">   
     <div className="container">
       <div className="d-flex justify-content-between">
         <Link to="/" className="text-decoration-none text-lightprimary">

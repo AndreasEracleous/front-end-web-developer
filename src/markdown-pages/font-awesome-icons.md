@@ -20,5 +20,5 @@ To starting use Font Awesome icons, first you need to download the <strong>font-
  	<li>Set two icons together</li>
 </ol>
 
-<p data-height="300" data-theme-id="9796" data-slug-hash="YPYVba" data-default-tab="result" data-user="Sp00ky" data-pen-title="Fort Awesome Tutorial" className="codepen">See the Pen <a href="https://codepen.io/Sp00ky/pen/YPYVba/">Fort Awesome Tutorial</a> by Andreas Eracleous (<a href="https://codepen.io/Sp00ky">@Sp00ky</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+<p data-height="300" data-theme-id="9796" data-slug-hash="YPYVba" data-default-tab="result" data-user="Sp00ky" data-pen-title="Fort Awesome Tutorial" class="codepen">See the Pen <a href="https://codepen.io/Sp00ky/pen/YPYVba/">Fort Awesome Tutorial</a> by Andreas Eracleous (<a href="https://codepen.io/Sp00ky">@Sp00ky</a>) on <a href="https://codepen.io">CodePen</a>.</p>
 <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
