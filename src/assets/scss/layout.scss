@@ -24,13 +24,13 @@ body::-webkit-scrollbar {
 }
 
 .site-name {
-    font-size: 1.50rem;
+    font-size: 1.30rem;
     letter-spacing: .1rem;
 }
 .tagline {
     position: relative;
     top: -5px;    
-    font-size: .82rem;
+    font-size: .70rem;
     letter-spacing: .1rem;
 }
 .text-lightprimary {
@@ -129,8 +129,34 @@ body::-webkit-scrollbar {
     -o-transform: none;
     transform: none;
 }
-
-@media(min-width:768px){
+.skill-html5 {
+    color: #e24e30;
+}
+.skill-css3 {
+    color: #1e74b4;
+}
+.skill-js {
+    color: #efda5b;
+}
+.skill-nodejs {
+    color: #85cb39;
+}
+.skill-bootstrap {
+    color: #5b4481;
+}
+.skill-sass {
+    color: #cb6999;
+}
+.skill-react {
+    color: #61dafb;
+}
+@media(min-width:768px) {
+    .site-name {
+        font-size: 1.50rem;
+    }    
+    .tagline {    
+        font-size: .82rem;
+    }    
     .site-nav__open,
     .site-nav__close {
         display: none;

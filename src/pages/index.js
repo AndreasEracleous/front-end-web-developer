@@ -7,13 +7,13 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import SocialIcons from '../components/social-icons'
 import {FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {faWordpress} from '@fortawesome/free-brands-svg-icons'
+import {faWordpress, faHtml5, faCss3Alt, faJs, faReact, faNodeJs, faBootstrap, faSass} from '@fortawesome/free-brands-svg-icons'
 import {faDesktop, faRocket} from '@fortawesome/pro-light-svg-icons'
 
 const IndexPage = () => (
 <Layout>
     <SEO title="Home" />   
-        <HeroHeader className="pb-4">
+        <HeroHeader >
             <div className="row py-5 text-white">
                 <div className="col-lg-8">
                     <h1 className="font-weight-normal text-uppercase">Andreas Eracleous</h1>
@@ -30,23 +30,37 @@ const IndexPage = () => (
                     <Image filename="home/responsive-web-design.png" alt="" className="d-block img-fluid ml-auto mr-auto mr-lg-0 ml-lg-auto" style={{maxWidth: '380px'}} />
                 </div>
             </div>
+            <div className="d-flex flex-wrap mt-3">
+                <p className="my-auto font-weight-normal m-0 text-white">I'M GREAT AT:</p>
+                <div className="d-flex flex-wrap">
+                    <FontAwesomeIcon icon={faHtml5} size="3x" className="text-white my-2 mx-4" />
+                    <FontAwesomeIcon icon={faCss3Alt} size="3x" className="text-white my-2 mx-4" />
+                    <FontAwesomeIcon icon={faJs} size="3x" className="text-white my-2 mx-4" />
+                    <FontAwesomeIcon icon={faBootstrap} size="3x" className="text-white my-2 mx-4" />
+                    <FontAwesomeIcon icon={faReact} size="3x" className="text-white my-2 mx-4" />
+                    <FontAwesomeIcon icon={faNodeJs} size="3x" className="text-white my-2 mx-4" />
+                    <FontAwesomeIcon icon={faSass} size="3x" className="text-white my-2 mx-4" />
+                </div>
+            </div>
+            <p className="text-white font-weight-normal m-0">Specialize in front end development and design, with knowledge in back end development.</p>
         </HeroHeader>
         <div className="bg-opacity text-secondary py-2 text-dark">
             <div className="d-flex container">
-                <p className="font-weight-light my-0">Top Rated Freelancer on <span className="text-primary">UpWork</span></p>
+                <p className="font-weight-normal my-0">Top Rated Freelancer on <span className="text-success">UpWork</span></p>
             </div>
         </div>     
 
     <section className="mt-5">
         <article className="container">
-
             <h3 className="h4 font-weight-normal text-uppercase mb-4">About</h3>
             <div className="row">
-                <div className="col-md-3 col-lg mb-4">
-                    <Image filename="common/andreas.jpg" alt="" className="img-thumbnail img-fluid mb-1" style={{maxWidth: '180px'}} />
-                    <SocialIcons icons={[ 'facebook', 'twitter', 'linkedin', 'instagram', 'github']} className="p-1 text-dark" size="lg" />
+                <div className="col-sm-4 col-md-3 col-lg mb-4">
+                    <Image filename="common/andreas.jpg" alt="" className="img-thumbnail img-fluid mb-1" style={{maxWidth:'250px'}} />
+                    <div className="d-flex justify-content-between" style={{maxWidth:'250px'}}>
+                        <SocialIcons icons={[ 'twitter', 'linkedin', 'github']} className="p-1 text-dark" size="2x" />
+                    </div>
                 </div>
-                <div className="col-md-9 col-lg-10">
+                <div className="col-sm-8 col-md-9 col-lg-10">
                     <p className="font-weight-bold">I like to work independently as Freelance Web Developer by helping companies and individuals collaborate remotely, I work on an online freelancing platform called Upwork. I live in Cyprus in a small beautiful island. I am primarily a Front-end Web Developer with a background in computer science and passion for web technology.</p>
                     <p>Web for me is not simply another avenue of the computing industry but it represents the future of what we will be interacting with. I have a strong technical background and I have been fortunate to work as a developer.</p>
                     <p>Front end developments are where my heart is at the moment but I see the place for Back end developments how they will evolve in the future.</p>
@@ -97,11 +111,11 @@ const IndexPage = () => (
                 </article>
             </div>
         </div>
-        <h3 className="h4 font-weight-normal text-uppercase mt-5 mb-4">Why you might want to hire me</h3>
+        <h3 className="h4 font-weight-normal text-uppercase mt-5 mb-4 text-center">Why you might want to hire me</h3>
         <p className="mb-0">I have over 10 years of web development experience that I can definitely help you with your front-end web developments.</p>
-        <p>All these years of work experience I help several clients and companies collaborate remotely to build responsive websites and web applications.</p>
-        <p>My mission is to perform your project successfully like it was my own project. I will work hard and make sure to get everything done for you, on time. Sometimes I even work extra time when it is needed to perfect a job from a client without more charging.</p>
-        <p>I have a strong desire to make sure you are happy and I won’t disappoint you.</p>
+        <p className="text-center">All these years of work experience I help several clients and companies collaborate remotely to build responsive websites and web applications.</p>
+        <p className="text-center">My mission is to perform your project successfully like it was my own project. I will work hard and make sure to get everything done for you, on time. Sometimes I even work extra time when it is needed to perfect a job from a client without more charging.</p>
+        <p className="text-center">I have a strong desire to make sure you are happy and I won’t disappoint you.</p>
     </section>
     <div id="work" className="bg-white mt-5 py-5">
         <section className="container">

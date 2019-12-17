@@ -36,7 +36,7 @@ const Footer = ({ siteTitle, menuLinks }) => (
          <div className="col-lg">
          <h4 className="h5 font-weight-normal">Social</h4>
           <hr/>
-         <SocialIcons icons={['facebook', 'twitter', 'linkedin', 'instagram', 'github']} className="p-2 text-secondary" size="lg" />        
+         <SocialIcons icons={['twitter', 'github', 'linkedin']} className="p-3 text-secondary" size="2x" />        
          </div>
      </div>
      </div>

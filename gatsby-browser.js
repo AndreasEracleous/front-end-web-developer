@@ -11,7 +11,7 @@ require("typeface-playfair-display");
 // Load Nunito Sans typeface
 require('typeface-nunito-sans')
 
-/*
+
 exports.shouldUpdateScroll = ({
 routerProps: { location },
 getSavedScrollPosition
@@ -36,7 +36,8 @@ function anchorScroll(location) {
                 // Note - error messages will vary depending on browser
             }
         }, 0);
+    } else {
+        window.scrollTo(0, 0);
     }
 
 }
-*/
