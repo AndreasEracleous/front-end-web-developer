@@ -7,7 +7,11 @@
 const path = require(`path`)
 exports.createPages = async ({ actions, graphql, reporter }) => {
   const { createPage } = actions
-  const blogPostTemplate = path.resolve(`src/templates/blogTemplate.js`)
+  const blogPostTemplate = path.resolve(`src/templates/blog-post.js`)
+  // Query for markdown nodes to use in creating pages.
+  // You can query for whatever data you want to create pages for e.g.
+  // products, portfolio items, landing pages, etc.
+  // Variables can be added as the second function parameter  
   const result = await graphql(`
     {
       allMarkdownRemark(
@@ -29,7 +33,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     reporter.panicOnBuild(`Error while running GraphQL query.`)
     return
   }
-  
+  // Create blog post pages.
   const posts = result.data.allMarkdownRemark.edges
   result.data.allMarkdownRemark.edges.forEach(({ node }, index) => {
     const prev = index === 0 ? null : posts[index - 1].node
@@ -44,16 +48,4 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
       }, // additional data can be passed via context
     })
   })
-}
-const { createFilePath } = require(`gatsby-source-filesystem`)
-exports.onCreateNode = ({ node, actions, getNode }) => {
-  const { createNodeField } = actions
-  if (node.internal.type === `MarkdownRemark`) {
-    const value = createFilePath({ node, getNode })
-    createNodeField({
-      name: `slug`,
-      node,
-      value,
-    })
-  }
 }
