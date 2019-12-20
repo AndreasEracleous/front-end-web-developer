@@ -87,10 +87,8 @@ body::-webkit-scrollbar {
     z-index: 100000;
 }
 .goTop:hover {
-    color: #ffc107;
+    color: #b0bec5;
 }
-
-
 .site-nav__open,
 .site-nav__close {
     position: relative;
@@ -149,6 +147,15 @@ body::-webkit-scrollbar {
 }
 .skill-react {
     color: #61dafb;
+}
+.twitter-icon {
+    color: #55acee;
+}
+.linkedin-icon {
+    color: #0077b5;
+}
+.github-icon {
+    color: #333;
 }
 @media(min-width:768px) {
     .site-name {

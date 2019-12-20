@@ -1,3 +1,4 @@
+/*
 import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
@@ -57,3 +58,4 @@ SocialIcons.propTypes = {
 }
 
 export default SocialIcons
+*/

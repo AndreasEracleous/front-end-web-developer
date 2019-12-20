@@ -1,25 +1,28 @@
 import React from "react"
-import { Link } from "gatsby"
+import { Link, graphql } from "gatsby"
 import PostLink from "../components/post-link"
 import HeroHeader from "../components/hero-header";
 import Image from "../components/image"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import SocialIcons from '../components/social-icons'
 import {FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {faWordpress, faHtml5, faCss3Alt, faJs, faReact, faNodeJs, faBootstrap, faSass} from '@fortawesome/free-brands-svg-icons'
+import {faWordpress, faHtml5, faCss3Alt, faJs, faReact, faNodeJs, faBootstrap, faSass, faTwitter, faGithub, faLinkedin} from '@fortawesome/free-brands-svg-icons'
 import {faDesktop, faRocket} from '@fortawesome/pro-light-svg-icons'
 
-const IndexPage = () => (
+
+const IndexPage = ({data}) => {
+    const {socialLinks} = data.site.siteMetadata;
+    const {twitter, linkedin, github} = socialLinks;
+return (    
 <Layout>
     <SEO title="Home" />   
         <HeroHeader >
-            <div className="row py-5 text-white">
+            <div className="row pt-5 pb-2 text-white">
                 <div className="col-lg-8">
                     <h1 className="font-weight-normal text-uppercase">Andreas Eracleous</h1>
                     <h2 className="lead">Cyprus Front-end web developer for ReactJS, NodeJS, GatsbyJS and Bootstrap</h2>
                     <p className="font-weight-normal mt-4 mb-3">Hi, I’m Andreas. I'm a freelance Front end web developer in Cyprus, who specialises in building <strong>responsive website</strong>, <strong>progressive web application</strong> and <strong>web performance optimization</strong>. Lately, I focused primarily on ReactJS, GatsbyJS, GraphQL and NodeJS development.</p>
-                    <a href="#" className="btn btn-light px-4">Contact me</a> { /*
+                    { /*
                     <div className="d-flex">
                         <a href="#" className="btn btn-outline-light px-4 mr-3">Contact me</a>
                         <a href="#" className="btn btn-success px-4">Hire me</a>
@@ -44,9 +47,9 @@ const IndexPage = () => (
             </div>
             <p className="text-white font-weight-normal m-0">Specialize in front end development and design, with knowledge in back end development.</p>
         </HeroHeader>
-        <div className="bg-opacity text-secondary py-2 text-dark">
+        <div className="bg-opacity py-2 text-dark">
             <div className="d-flex container">
-                <p className="font-weight-normal my-0">Top Rated Freelancer on <span className="text-success">UpWork</span></p>
+                <p className="font-weight-normal my-0">Top Rated Freelancer on <a href="https://www.upwork.com/fl/andreaseracleous" target="_blank" rel="noopener noreferrer" className="text-primary">UpWork</a></p>
             </div>
         </div>     
 
@@ -57,7 +60,9 @@ const IndexPage = () => (
                 <div className="col-sm-4 col-md-3 col-lg mb-4">
                     <Image filename="common/andreas.jpg" alt="" className="img-thumbnail img-fluid mb-1" style={{maxWidth:'250px'}} />
                     <div className="d-flex justify-content-between" style={{maxWidth:'250px'}}>
-                        <SocialIcons icons={[ 'twitter', 'linkedin', 'github']} className="p-1 text-dark" size="2x" />
+                    <a href={twitter.link} target="_blank" rel="noopener noreferrer" className="p-1 twitter-icon"><FontAwesomeIcon icon={faTwitter} size="2x" /></a>
+                    <a href={linkedin.link} target="_blank" rel="noopener noreferrer" className="p-1 linkedin-icon"><FontAwesomeIcon icon={faLinkedin} size="2x" /></a>
+                    <a href={github.link} target="_blank" rel="noopener noreferrer" className="p-1 github-icon"><FontAwesomeIcon icon={faGithub} size="2x" /></a>
                     </div>
                 </div>
                 <div className="col-sm-8 col-md-9 col-lg-10">
@@ -120,7 +125,7 @@ const IndexPage = () => (
     <div id="work" className="bg-white mt-5 py-5">
         <section className="container">
             <h2 className="h4 font-weight-normal text-uppercase text-center">Check out a few of my project, I've worked on.</h2>
-            <p className="h5 text-secondary font-weight-normal m-0 text-center">I help several clients and companies collaborate remotel to build responsive websites and applications.</p>
+            <p className="h5 font-weight-normal m-0 text-center">I help several clients and companies collaborate remotel to build responsive websites and applications.</p>
 
             <article className="row mt-5">
                 <figure className="col-lg-5">
@@ -172,8 +177,8 @@ const IndexPage = () => (
 
     <section className="container text-center mt-4 pt-5">
         <h3 className="h4 font-weight-normal text-uppercase">Testimonials</h3>
-        <p className="h5 text-secondary font-weight-normal">Few people have said about Andreas Eracleous</p>
-        <p className="m-0">Trusted by <span className="text-success">UpWork</span></p>
+        <p className="h5 font-weight-normal">Few people have said about Andreas</p>
+        <p className="m-0">Trusted by <a href="https://www.upwork.com/fl/andreaseracleous" target="_blank" rel="noopener noreferrer" className="text-primary">UpWork</a></p>
         <div className="row">
             <div className="col-md-6 col-lg">
                 <blockquote className="bg-white border shadow-sm p-4 mt-4">
@@ -203,7 +208,7 @@ const IndexPage = () => (
     <div id="contact" className="bg-white">
         <section className="container mt-5 py-5">
             <h3 className="h4 font-weight-normal text-uppercase text-center">Contact</h3>
-            <p className="h5 text-secondary font-weight-normal m-0 text-center">Estimates, questions, information? Don't hesitate to contact me.</p>
+            <p className="h5 font-weight-normal m-0 text-center">Estimates, questions, information? Don't hesitate to contact me.</p>
             <form className="mt-4">
                 <div className="row">
                     <div className="col-lg form-group">
@@ -226,10 +231,41 @@ const IndexPage = () => (
 
                 <button type="submit" className="btn btn-lg btn-success px-5 float-right">Submit</button>
             </form>
-            <p className="small text-secondary mt-2 mb-3">Quick respond in 24 hours or less.</p>
+            <p className="small mt-2 mb-3">Quick respond in 24 hours or less.</p>
         </section>
     </div>
 </Layout>
 )
+}
 
 export default IndexPage
+export const pageQuery = graphql`
+query {
+    site {
+        siteMetadata {
+          socialLinks {
+            facebook {
+              name
+              link
+            }
+            github {
+              name
+              link
+            }
+            instagram {
+              name
+              link
+            }
+            linkedin {
+              name
+              link
+            }
+            twitter {
+              name
+              link
+            }
+          }
+        }
+      }
+}
+`

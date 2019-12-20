@@ -2,8 +2,8 @@ import React from "react"
 import { graphql, Link } from "gatsby"
 import { Breadcrumb } from 'gatsby-plugin-breadcrumb'
 
-import SocialIcons from '../components/social-icons'
 import {FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {faTwitter} from '@fortawesome/free-brands-svg-icons'
 import {faRss} from '@fortawesome/pro-light-svg-icons'
 import Image from "../components/image"
 import HeroHeader from "../components/hero-header"
@@ -36,7 +36,7 @@ const BlogPage = ({
                             <Image filename="common/andreas.jpg" alt="" className="rounded-circle img-fluid mx-auto mb-3" style={{maxWidth:'130px'}} />
                             <p>Hi I'm <strong>Andreas Eracleous</strong> and I'm a <strong>Front-End Web Developer</strong>.<br/>Learn more <a href="/about">about me</a>.</p> 
 						    <p>Welcome to my blog. I hope you find something useful here.</p>
-						    <p>Follow me on <SocialIcons icons={['twitter']} className="text-primary" size="lg" /></p>
+						    <p>Follow me on <a href="https://twitter.com/AndrewEracleous" target="_blank" rel="noopener noreferrer" className="twitter-icon"><FontAwesomeIcon icon={faTwitter} size="lg" /></a></p>
                         </div>
                     </div>
                 </div>

@@ -39,28 +39,28 @@ module.exports = {
       link:'/#contact'
       },                                     
     ],
-    socialLinks: [
-      {
+    socialLinks:{
+      facebook: {
         name: 'Facebook',
         link: 'https://www.facebook.com/andrew.eracleous'
-      },
-      {
+      },      
+      twitter: {
         name: 'Twitter',
         link: 'https://twitter.com/AndrewEracleous'
       },
-      {
+      github: {
         name: 'Github',
         link: 'https://github.com/AndreasEracleous'
       },
-      {
+      linkedin: {
         name: 'Linkedin',
         link: 'https://cy.linkedin.com/in/andreaseracleous'
       },
-      {
+      instagram: {
         name: 'Instagram',
         link: 'https://www.instagram.com/sp0_0ky'
-      },            
-    ],   
+      },           
+    },   
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -114,25 +114,25 @@ module.exports = {
                 return Object.assign({}, edge.node.frontmatter, {
                   description: edge.node.excerpt,
                   date: edge.node.frontmatter.date,
-                  url: site.siteMetadata.siteUrl + edge.node.fields.slug,
-                  guid: site.siteMetadata.siteUrl + edge.node.fields.slug,
+                  url: site.siteMetadata.siteUrl + edge.node.frontmatter.path,
+                  guid: site.siteMetadata.siteUrl + edge.node.frontmatter.path,
                   custom_elements: [{ "content:encoded": edge.node.html }],
                 })
               })
             },
             query: `
               {
-                allMarkdownRemark(
+                allMarkdownRemark (
                   sort: { order: DESC, fields: [frontmatter___date] },
                 ) {
                   edges {
                     node {
                       excerpt
                       html
-                      fields { slug }
                       frontmatter {
                         title
                         date
+                        path
                       }
                     }
                   }
