@@ -32,4 +32,5 @@ public/
 .DS_Store
 
 # Environment variables
+.env.production
 .env.development

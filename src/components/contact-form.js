@@ -6,10 +6,10 @@ const ContactForm = () => {
   const [state, setState] = React.useState({})
   const recaptchaRef = React.createRef()
 
-  const RECAPTCHA_KEY = process.env.GATSBY_APP_SITE_RECAPTCHA_KEY
+  const RECAPTCHA_KEY = process.env.GATSBY_SITE_RECAPTCHA_KEY
   if (typeof RECAPTCHA_KEY === 'undefined') {
     throw new Error(`
-    Env var GATSBY_APP_SITE_RECAPTCHA_KEY is undefined! 
+    Env var GATSBY_SITE_RECAPTCHA_KEY is undefined! 
     You probably forget to set it in your Netlify build environment variables. 
     Make sure to get a Recaptcha key at https://www.netlify.com/docs/form-handling/#custom-recaptcha-2-with-your-own-settings
     Note this demo is specifically for Recaptcha v2
@@ -48,11 +48,11 @@ const ContactForm = () => {
   return (
     <form 
     className="mt-4"
-    name="contact"
+    name="contact-recaptcha"
     method="post"
     action="/thanks/"
     data-netlify="true"
-    data-netlify-honeypot="bot-field"
+    data-netlify-recaptcha="true"
     onSubmit={handleSubmit}>
         <noscript>
           <p>This form won’t work with Javascript disabled</p>
