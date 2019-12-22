@@ -209,26 +209,25 @@ return (
         <section className="container mt-5 py-5">
             <h3 className="h4 font-weight-normal text-uppercase text-center">Contact</h3>
             <p className="h5 font-weight-normal m-0 text-center">Estimates, questions, information? Don't hesitate to contact me.</p>
-            <form className="mt-4">
+            <form name="contact" className="mt-4" netlify>
                 <div className="row">
                     <div className="col-lg form-group">
                         <label htmlFor="inputName">Name</label>
-                        <input type="text" className="form-control form-control-lg" id="inputName" />
+                        <input type="text" name="name" className="form-control form-control-lg" id="inputName" />
                     </div>
                     <div className="col-lg form-group">
                         <label htmlFor="inputEmail">Email address</label>
-                        <input type="email" className="form-control form-control-lg" id="inputEmail" />
+                        <input type="email" name="email" className="form-control form-control-lg" id="inputEmail" />
                     </div>
                 </div>
                 <div className="form-group">
                     <label htmlFor="inputSubject">Subject</label>
-                    <input type="text" className="form-control form-control-lg" id="inputSubject" />
+                    <input type="text" name="subject" className="form-control form-control-lg" id="inputSubject" />
                 </div>
                 <div className="form-group">
                     <label htmlFor="inputMessage">Message</label>
-                    <textarea className="form-control" id="inputMessage" rows="8"></textarea>
+                    <textarea name="message" className="form-control" id="inputMessage" rows="8"></textarea>
                 </div>
-
                 <button type="submit" className="btn btn-lg btn-success px-5 float-right">Submit</button>
             </form>
             <p className="small mt-2 mb-3">Quick respond in 24 hours or less.</p>
