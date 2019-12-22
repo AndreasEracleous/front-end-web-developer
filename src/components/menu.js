@@ -18,7 +18,6 @@ const Menu = ({menuLinks}) => {
         windowWidth < mediaQuery.tablet && setMobileMenu(!mobileMenu);
     }
     useEffect(() => {
-    console.log("useEffect");
     setWindowWidth(document.body.clientWidth)
     window.addEventListener('resize', handleResize);
     return () => {

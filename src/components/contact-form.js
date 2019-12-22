@@ -23,9 +23,7 @@ const ContactForm = () => {
       .map((key) => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
       .join('&')
   }
-  const onChange = (value) => {
-    console.log("Captcha value:", value);
-  }
+
   const handleChange = (e) => {
     setState({ ...state, [e.target.name]: e.target.value })
   }
@@ -34,6 +32,7 @@ const ContactForm = () => {
     e.preventDefault()
     const form = e.target    
     const recaptchaValue = recaptchaRef.current.getValue()
+
     recaptchaValue && fetch('/', {
       method: 'POST',
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
@@ -50,7 +49,7 @@ const ContactForm = () => {
   return (
     <form 
     className="mt-4"
-    name="contact-recaptcha"
+    name="contact"
     method="post"
     action="/thanks/"
     data-netlify="true"
@@ -77,7 +76,7 @@ const ContactForm = () => {
             <label htmlFor="inputMessage">Message</label>
             <textarea name="message" className="form-control" id="inputMessage" rows="8" onChange={handleChange} required></textarea>
         </div>
-        <Recaptcha ref={recaptchaRef} sitekey={RECAPTCHA_KEY} onChange={onChange} />
+        <Recaptcha ref={recaptchaRef} sitekey={RECAPTCHA_KEY} />
         <button type="submit" className="btn btn-lg btn-success px-5 float-right">Submit</button>
     </form>
   )
