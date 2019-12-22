@@ -6,7 +6,7 @@ const ContactForm = () => {
   const [state, setState] = React.useState({})
   const recaptchaRef = React.createRef()
 
-  const RECAPTCHA_KEY = process.env.SITE_RECAPTCHA_KEY
+  const RECAPTCHA_KEY = process.env.GATSBY_SITE_RECAPTCHA_KEY
   /*
   if (typeof RECAPTCHA_KEY === 'undefined') {
     throw new Error(`

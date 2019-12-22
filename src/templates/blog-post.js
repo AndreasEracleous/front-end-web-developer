@@ -20,7 +20,7 @@ export default function Template({
   const { title, description, path, date, featuredImage } = frontmatter
 
   const disqusConfig = {
-    shortname: process.env.DISQUS_NAME,
+    shortname: process.env.GATSBY_DISQUS_NAME,
     config: { identifier: path, title },
   }
   return (
