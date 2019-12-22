@@ -209,7 +209,7 @@ return (
         <section className="container mt-5 py-5">
             <h3 className="h4 font-weight-normal text-uppercase text-center">Contact</h3>
             <p className="h5 font-weight-normal m-0 text-center">Estimates, questions, information? Don't hesitate to contact me.</p>
-            <form name="contact" className="mt-4" netlify>
+            <form name="contact" method="POST" className="mt-4" data-netlify="true">
                 <div className="row">
                     <div className="col-lg form-group">
                         <label htmlFor="inputName">Name</label>
