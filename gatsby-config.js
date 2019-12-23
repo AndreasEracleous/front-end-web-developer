@@ -153,7 +153,8 @@ module.exports = {
       options: {
         trackingId: process.env.GATSBY_GOOGLE_ANALYTICS_TRACKING_ID,
       },   
-    },   
+    },
+    /*   
     {
       resolve: 'gatsby-plugin-guess-js',
       options: {
@@ -169,6 +170,7 @@ module.exports = {
         },      
       },  
     },
+    */
     `gatsby-plugin-netlify`,
     `gatsby-plugin-sitemap`,
     `gatsby-transformer-remark`,
