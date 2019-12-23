@@ -170,7 +170,7 @@ module.exports = {
         },      
       },  
     },
-    */
+
     {
       resolve: `gatsby-plugin-segment-js`,
       options: {
@@ -198,6 +198,20 @@ module.exports = {
           // time to wait after scroll action in ms. Defaults to 1000ms
           delayLoadTime: 1000
       }
+    },    
+     */
+    {
+      resolve: 'gatsby-plugin-analytics-without-segment',
+      options: {
+        cdnUrl: 'https://cdnjs.cloudflare.com/ajax/libs/analytics.js/2.9.1/analytics.min.js',  // host yourself or use cdnjs (https://cdnjs.com/libraries/analytics.js)
+        services: {
+          // see integration https://github.com/segment-integrations/analytics.js-integration-google-analytics/blob/master/lib/index.js
+          'Google Analytics': {
+            trackingId: process.env.GATSBY_GOOGLE_ANALYTICS_TRACKING_ID,
+            anonymizeIp: true,
+          },
+        },
+      },
     },    
     `gatsby-plugin-netlify`,
     `gatsby-plugin-sitemap`,
