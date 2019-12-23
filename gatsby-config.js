@@ -158,6 +158,10 @@ module.exports = {
       resolve: 'gatsby-plugin-guess-js',
       options: {
         GAViewID: process.env.GATSBY_GOOGLE_ANALYTICS_VIEW_ID, // Google Analytics view ID
+        jwt: {
+          client_email: process.env.GOOGLE_SERVICE_ACCOUNT_EMAIL,
+          private_key: process.env.GOOGLE_SERVICE_ACCOUNT_PRIVATE_KEY,
+        },
         minimumThreshold: 0.03,
         period: {
           startDate: new Date("2018-5-5"),
