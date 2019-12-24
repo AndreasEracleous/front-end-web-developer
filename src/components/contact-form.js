@@ -6,7 +6,7 @@ const ContactForm = () => {
   const [state, setState] = React.useState({})
   const recaptchaRef = React.createRef()
 
-  const RECAPTCHA_KEY = process.env.GATSBY_SITE_RECAPTCHA_KEY
+  //const RECAPTCHA_KEY = process.env.GATSBY_SITE_RECAPTCHA_KEY
   /*
   if (typeof RECAPTCHA_KEY === 'undefined') {
     throw new Error(`
@@ -31,14 +31,14 @@ const ContactForm = () => {
   const handleSubmit = (e) => {
     e.preventDefault()
     const form = e.target    
-    const recaptchaValue = recaptchaRef.current.getValue()
+    //const recaptchaValue = recaptchaRef.current.getValue()
 
-    recaptchaValue && fetch('/', {
+    fetch('/', {
       method: 'POST',
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
       body: encode({
         'form-name': form.getAttribute('name'),
-        'g-recaptcha-response': recaptchaValue,
+        //'g-recaptcha-response': recaptchaValue,
         ...state,
       }),
     })
@@ -53,11 +53,14 @@ const ContactForm = () => {
     method="post"
     action="/thanks/"
     data-netlify="true"
-    data-netlify-recaptcha="true"
+    netlify-honeypot="bot-field"
     onSubmit={handleSubmit}>
         <noscript>
           <p>This form won’t work with Javascript disabled</p>
         </noscript>
+        <div className="d-none">
+          <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+        </div>
         <div className="row">
             <div className="col-lg form-group">
                 <label htmlFor="inputName">Name</label>
@@ -76,8 +79,8 @@ const ContactForm = () => {
             <label htmlFor="inputMessage">Message</label>
             <textarea name="message" className="form-control" id="inputMessage" rows="8" onChange={handleChange} required></textarea>
         </div>
-        <Recaptcha ref={recaptchaRef} sitekey={RECAPTCHA_KEY} />
-        <button type="submit" className="btn btn-lg btn-success px-5 float-right">Submit</button>
+        {/*<Recaptcha ref={recaptchaRef} sitekey={RECAPTCHA_KEY} />*/}
+        <button type="submit" className="btn btn-lg btn-success mt-3 mt-md-0 px-5 float-right">Submit</button>
     </form>
   )
 }

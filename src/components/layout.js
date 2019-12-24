@@ -12,11 +12,11 @@ import { useStaticQuery, graphql } from "gatsby"
 import Header from "./header"
 import Footer from "./footer"
 import Helmet from 'react-helmet'
-import { config, dom } from '@fortawesome/fontawesome-svg-core'
+//import { config, dom } from '@fortawesome/fontawesome-svg-core'
 import "../assets/scss/main.scss"
 //import "../assets/scss/header.scss"
 
-config.autoAddCss = false;
+//config.autoAddCss = false;
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -36,9 +36,13 @@ const Layout = ({ children }) => {
   const {title, occupation, menuLinks} = data.site.siteMetadata;
   return (
     <>
+    {
+      /*
       <Helmet>
           <style>{dom.css()}</style>
-      </Helmet>      
+      </Helmet>    
+      */  
+     }
       <Header siteTitle={title}
         siteOccupation={occupation}
         menuLinks={menuLinks}

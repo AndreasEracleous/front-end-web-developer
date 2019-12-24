@@ -19,6 +19,10 @@ body {
 body::-webkit-scrollbar {
     display: none; 
 }
+.name-brand {
+    position: relative;
+    z-index: 2;
+}
 .nav-link {
     padding: .5rem .8rem;
 }
@@ -98,7 +102,7 @@ body::-webkit-scrollbar {
 
 .site-nav__list {
     margin: 0;
-    padding-top: 1.6rem;
+    padding-top: 5rem;
     list-style: none;
     position: fixed;
     top: 0;
@@ -117,7 +121,7 @@ body::-webkit-scrollbar {
     -o-transition: 0.2s;
     transition: 0.2s;
     will-change: transform;
-    background-color:#0D47A1;
+    background-color: rgba(13, 71, 161, 0.9);
     text-align: center;
 }
 .site-nav__active {

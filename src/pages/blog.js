@@ -21,12 +21,12 @@ const BlogPage = ({
     .map(edge => <PostLink key={edge.node.id} post={edge.node} />)
   return <Layout>
             <SEO title="Blog" />
-            <HeroHeader className="text-center text-white">
-                <h1 className="font-weight-normal">Blog <span className="small"><a href="/rss.xml" target="_blank" rel="noopener noreferrer" className="text-warning"><FontAwesomeIcon icon={faRss} size="sm" /></a></span></h1>
-                <h2 className="lead">Practical tips for responsive web design.</h2>
+            <HeroHeader className="pt-4 text-center text-white">
+                <h1 className="font-weight-normal">Blog <span className="small"><a href="/rss.xml" target="_blank" rel="noopener noreferrer" className="text-lightprimary"><FontAwesomeIcon icon={faRss} size="sm" /></a></span></h1>
+                <h2 className="lead mb-2">Practical tips for responsive web design.</h2>
                 <Breadcrumb location={location} crumbLabel="Blog" />
             </HeroHeader>
-            <div className="container">
+            <div className="container mb-5">
                 <div className="row">
                     <div className="col-lg">
                         {Posts}

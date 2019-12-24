@@ -6,11 +6,8 @@
 
 //import "./src/assets/scss/main.scss"
 
-// Load Playfair Display typeface
-require("typeface-playfair-display");
 // Load Nunito Sans typeface
 require('typeface-nunito-sans')
-
 
 exports.shouldUpdateScroll = ({
 routerProps: { location },
@@ -28,7 +25,7 @@ function anchorScroll(location) {
                 const item = document.querySelector(`${location.hash}`).offsetTop;
                 //console.log(item)
                 const mainNavHeight = document.querySelector(`#mainNav`).offsetHeight;
-                window.scrollTo({top: item - mainNavHeight, left: 0, behavior: 'smooth'});
+                window.scrollTo({top: item - (mainNavHeight*2), left: 0, behavior: 'smooth'});
             }
             catch(error) {
                 console.error(error);

@@ -3,6 +3,7 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Image from "../components/image"
+import HeroHeader from "../components/hero-header"
 
 const ResumePage = () => (
 <Layout>
@@ -13,13 +14,14 @@ const ResumePage = () => (
     <p className="text-center"><em>andrew.eracleous@gmail.com</em>
         <br/><em>Ayios Athanasios, Limassol, Cyprus</em></p>
     <hr className="mt-5 mb-5" />
+    
     <div className="row">
         <div className="col-md-3">
             <h3 className="h4 mb-3 text-uppercase">WORK EXPERIENCE</h3>
         </div>
         <div className="col-md-8">
             <article>
-                <h4 className="h5 mb-4">XM (Trading Point of Financial Instruments) – <em>Limassol, Cyprus </em>2014 – Present<br/> <em>Front-End Web Developer</em></h4>
+                <h4 className="h5 mb-4">XM (Trading Point of Financial Instruments) – <em>Limassol, Cyprus </em>2014 – 2018<br/> <em>Front-End Web Developer</em></h4>
                 <ul>
                     <li>Keeping the company’s site up-to-date with the latest web technologies</li>
                     <li>Maintaining user experience design consistency</li>
@@ -117,9 +119,9 @@ const ResumePage = () => (
             <h3 className="h4 mb-3 text-uppercase">Computer Skills</h3>
         </div>
         <div className="col-md-8">
-            <article><strong>Database:</strong> MySQL , SQLite!
-                <br/> <strong>Languages:</strong> C++, JAVA, C# .NET, SQL, XHTML, CSS,&nbsp;Search engine optimization!
-                <br/> <strong>Software:</strong> Eclipse, Adobe Dreamweaver CS5, Photoshop&nbsp;CS5, Microsoft Office</article>
+            <article><strong>Front-end framework:</strong> Bootstrap, ReactJS, NodeJS, GatsbyJS
+                <br/> <strong>Languages:</strong> JavaScript, JAVA, HTML5, CSS3
+                <br/> <strong>Software:</strong> Git, Eclipse, Adobe Photoshop CS6, </article>
         </div>
     </div>
     </div>

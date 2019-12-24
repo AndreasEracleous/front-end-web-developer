@@ -11,20 +11,13 @@ const AboutPage = ({location}) => (
     </HeroHeader>   
     <div className="container py-5">
         <h2 className="h4 font-weight-normal text-uppercase mb-4">Who Am I?</h2>
-        <p>Hi, I’m Andreas Eracleous and I like to work independently as Freelance Front-end Web Developer by helping companies and individuals collaborate remotely. I live in Cyprus in a small beautiful island.</p>
-        <p>I work on an online freelancing platform called <a href="https://www.upwork.com/" rel="nofollow">Upwork</a>.</p>
-        <blockquote className="blockquote bg-white border p-3">
-            <p className="m-0">Upwork formerly Elance-oDesk, is a global freelancing platform where businesses and independent professionals connect and collaborate remotely</p>
-        </blockquote>
-        <p>I am primarily a Front-end Web Developer with a background in computer science (studied at the University of Nicosia) and passion for web technology.</p>
+        <p>Hi, I’m Andreas Eracleous and I'm primarily a Front-end Web Developer with a background in computer science (studied at the University of Nicosia) with passion for web technology.</p>
         <p>Web for me is not simply another avenue of the computing industry but it represents the future of what we will be interacting with. I have a strong technical background and I have been fortunate to work as a developer.</p>
         <p>Front end developments are where my heart is at the moment but I see the place for web and Android applications how they will evolve in the future.</p>
-        <p>As a freelancer I have developed a bunch responsive websites that some of these are already to my profile and on a number of Android applications that are available on the Google Play (Android market).</p>
+        <p>As a freelancer I have developed a bunch responsive websites and on a number of Android applications.</p>
         <h2 className="h4 font-weight-normal text-uppercase my-4">What I Do?</h2>
-        <h3 className="h5 text-capitalize font-weight-normal mt-4">As a Front End Web Developer</h3>
-        <p>I developed many responsive websites for individuals and small businesses using Bootstrap framework. I consider myself as a specialist on converting PSD design to HTML responsive web layout and even more I am an expert on writing an effective code in CSS.</p>
-        <h3 className="h5 text-capitalize font-weight-normal mt-4">As an Android Developer</h3>
-        <p>I developed an <a href="https://andreaseracleous.com/portfolio/maximize-battery-saver/">Android battery life application</a> where it was my Bachelor dissertation in the University. It indicates some battery information like the battery level, health, temperature, status, power source, voltage level and technology of battery. Additional it indicates the availability time of talk time, audio, video, web, games and navigation.</p>
+        <p><strong>As a Front End Web Developer</strong>, I developed many responsive websites for individuals and small businesses using Bootstrap framework. I consider myself as a specialist on converting PSD design to HTML responsive web layout and even more I am an expert on writing an effective code in CSS.</p>
+        <p><strong>As an Android Developer</strong>, I developed an <a href="https://andreaseracleous.com/portfolio/maximize-battery-saver/">Android battery life application</a> where it was my Bachelor dissertation in the University. It indicates some battery information like the battery level, health, temperature, status, power source, voltage level and technology of battery. Additional it indicates the availability time of talk time, audio, video, web, games and navigation.</p>
         <p>After my graduation, I focus deeper in the Android development and I spend many hours to learn of how to implement a Google Play In-app Billing, Google Cloud Messaging, Google Play services, Facebook API, SQLite and customize a graphical user interface.</p>
         <p>By focusing on Android Development I continued and developed three other apps, the first one being is a <a href="https://andreaseracleous.com/portfolio/easy-brightness-level/">brightness controller level app</a>, the second is a <a href="https://andreaseracleous.com/portfolio/mortgage-payment-calculator/">mortgage payment calculator</a> and also a <a href="https://andreaseracleous.com/portfolio/tic-tac-toe-free/">Tic Tac Toe game</a> that user can compete with the device but even with another user player that user.</p>
         <p>Afterward I decided to build even more complex apps using SQL language together with a friend.</p>

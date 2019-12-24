@@ -1,5 +1,5 @@
 import React from "react"
-
+import { Link } from "gatsby"
 import Layout from "../../components/layout"
 import SEO from "../../components/seo"
 
@@ -18,8 +18,7 @@ const WebsiteSpeedPage = () => (
 			<div className="text-center border border-secondary py-5">
 		  <i className="fal fa-envelope size-50 text-secondary mb-3"></i>	
 		  <p>Need a project quote or more information about my services?<br/>Click the button below for the fastest 24 hour response.</p>		
-		  <script>mail2("andrew.eracleous","gmail",0,"", "Ask For A Quote", "btn btn-lg btn-success text-uppercase mt-4")</script>
-		  <small className="d-block text-secondary mt-2">Quick respond in 24 hours or less.</small>
+      <Link to="/#contact" className="btn btn-lg btn-success">Contact</Link>		  <small className="d-block text-secondary mt-2">Quick respond in 24 hours or less.</small>
 		</div>	
 	</div>
 	<div className="col-md mt-4">

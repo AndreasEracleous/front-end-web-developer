@@ -21,27 +21,28 @@ export default function Template({
 
   const disqusConfig = {
     shortname: process.env.GATSBY_DISQUS_NAME,
-    config: { identifier: path, title },
+    config: {
+      identifier: path, title 
+    },
   }
   return (
     <Layout>
       <SEO title={title} description={excerpt} />
-      <HeroHeader/>
-      <div className="container pt-2">
-        <Breadcrumb location={location} crumbLabel={title} className="text-dark" />
+      <HeroHeader className="pt-4 text-center text-white">
+          <header>
+            <h1 className="font-weight-normal">{title}</h1>
+            <small className="d-block mb-2">{date}</small>
+            <Breadcrumb location={location} crumbLabel={title} />
+          </header>
+      </HeroHeader>
+      <div className="container">
         <article className="py-4">
-        <header>
-          <h1 className="font-weight-bold">{title}</h1>
-          <small className="d-block mb-4">{date}</small>
-        </header>  
         {
        // <Img fluid={featuredImgFluid} />
         }
         <Image filename={featuredImage} alt="" className="img-fluid mx-auto" style={{maxWidth: '600px'}} />
-
-        <hr className="mb-4"/>
         <div
-          className="blog-post-content"
+          className="blog-post-content mt-4"
           dangerouslySetInnerHTML={{ __html: html }}
         />
         </article>

@@ -1,6 +1,5 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
-import PostLink from "../components/post-link"
 import HeroHeader from "../components/hero-header";
 import Image from "../components/image"
 import Layout from "../components/layout"
@@ -18,7 +17,7 @@ return (
 <Layout>
     <SEO title="Home" />   
         <HeroHeader >
-            <div className="row pt-5 pb-2 text-white">
+            <div className="row pt-4 pt-lg-5 pb-2 text-white">
                 <div className="col-lg-8">
                     <h1 className="font-weight-normal text-uppercase">Andreas Eracleous</h1>
                     <h2 className="lead">Cyprus Front-end web developer for ReactJS, NodeJS, GatsbyJS and Bootstrap</h2>
@@ -31,7 +30,7 @@ return (
                     */ }
                 </div>
                 <div className="col-lg mt-5 my-lg-auto">
-                    <Image filename="home/responsive-web-design.png" alt="" className="d-block img-fluid ml-auto mr-auto mr-lg-0 ml-lg-auto" style={{maxWidth: '380px'}} />
+                    <Image filename="home/responsive-web-design.png" alt="Responsive Web Design" className="d-block img-fluid ml-auto mr-auto mr-lg-0 ml-lg-auto" style={{maxWidth: '380px'}} />
                 </div>
             </div>
             <div className="d-flex flex-wrap mt-3">
@@ -54,12 +53,12 @@ return (
             </div>
         </div>     
 
-    <section className="mt-5">
+    <section id="about" className="mt-5">
         <article className="container">
             <h3 className="h4 font-weight-normal text-uppercase mb-4">About</h3>
             <div className="row">
                 <div className="col-sm-4 col-md-3 col-lg mb-4">
-                    <Image filename="common/andreas.jpg" alt="" className="img-thumbnail img-fluid mb-1" style={{maxWidth:'250px'}} />
+                    <Image filename="common/andreas.jpg" alt="Andreas Eracleous" className="img-thumbnail img-fluid mb-1" style={{maxWidth:'250px'}} />
                     <div className="d-flex justify-content-between" style={{maxWidth:'250px'}}>
                     <a href={twitter.link} target="_blank" rel="noopener noreferrer" className="p-1 twitter-icon"><FontAwesomeIcon icon={faTwitter} size="2x" /></a>
                     <a href={linkedin.link} target="_blank" rel="noopener noreferrer" className="p-1 linkedin-icon"><FontAwesomeIcon icon={faLinkedin} size="2x" /></a>
@@ -67,15 +66,16 @@ return (
                     </div>
                 </div>
                 <div className="col-sm-8 col-md-9 col-lg-10">
-                    <p className="font-weight-bold">I like to work independently as Freelance Web Developer by helping companies and individuals collaborate remotely, I work on an online freelancing platform called Upwork. I live in Cyprus in a small beautiful island. I am primarily a Front-end Web Developer with a background in computer science and passion for web technology.</p>
+                    <p className="font-weight-bold">Hi, I’m Andreas and I live in Cyprus in a small beautiful island. I am primarily a Front-end Web Developer with a background in computer science and passion for web technology. I work independently as Freelance Web Developer by helping companies and individuals collaborate remotely using an online freelancing platform called Upwork.</p>
                     <p>Web for me is not simply another avenue of the computing industry but it represents the future of what we will be interacting with. I have a strong technical background and I have been fortunate to work as a developer.</p>
                     <p>Front end developments are where my heart is at the moment but I see the place for Back end developments how they will evolve in the future.</p>
-                    <p>As a freelancer I have developed a bunch responsive websites and on a number of Android applications</p>
+                    <p>As a freelancer I have developed a bunch responsive websites and on a number of Android applications.</p>
+                    <Link to="/about" className="btn btn-sm btn-outline-primary">Read more</Link>
                 </div>
             </div>
         </article>
     </section>
-    <section id="services" className="container mt-5">
+    <section id="services" className="container mt-5 pb-5">
         <h3 className="h4 font-weight-normal text-uppercase">WHAT I OFFER</h3>
         <article className="mt-4">
             <p>I am currently available on UpWork for front-end development jobs. I can help you with: <strong>website performance optimization</strong>, <strong>Wordpress installation</strong> and <strong>conversion design to Bootstrap</strong>, <strong>HTML, CSS, JS code</strong> in which adaptive and <strong>responsive templates</strong> for all devices by using the latest web technologies.</p>
@@ -121,9 +121,9 @@ return (
         <p className="mb-0">I have over 10 years of web development experience that I can definitely help you with your front-end web developments.</p>
         <p className="text-center">All these years of work experience I help several clients and companies collaborate remotely to build responsive websites and web applications.</p>
         <p className="text-center">My mission is to perform your project successfully like it was my own project. I will work hard and make sure to get everything done for you, on time. Sometimes I even work extra time when it is needed to perfect a job from a client without more charging.</p>
-        <p className="text-center">I have a strong desire to make sure you are happy and I won’t disappoint you.</p>
+        <p className="text-center m-0">I have a strong desire to make sure you are happy and I won’t disappoint you.</p>
     </section>
-    <div id="work" className="bg-white mt-5 py-5">
+    <div id="work" className="bg-white py-5">
         <section className="container">
             <h2 className="h4 font-weight-normal text-uppercase text-center">Check out a few of my project, I've worked on.</h2>
             <p className="h5 font-weight-normal m-0 text-center">I help several clients and companies collaborate remotel to build responsive websites and applications.</p>
@@ -176,7 +176,7 @@ return (
         </section>
     </div>
 
-    <section className="container text-center mt-4 pt-5">
+    <section className="container text-center mt-5 pb-5">
         <h3 className="h4 font-weight-normal text-uppercase">Testimonials</h3>
         <p className="h5 font-weight-normal">Few people have said about Andreas</p>
         <p className="m-0">Trusted by <a href="https://www.upwork.com/fl/andreaseracleous" target="_blank" rel="noopener noreferrer" className="text-primary">UpWork</a></p>
@@ -206,11 +206,11 @@ return (
         </div>
     </section>
 
-    <div id="contact" className="bg-white">
-        <section className="container mt-5 py-5">
+    <div id="contact" className="bg-white py-5">
+        <section className="container">
             <h3 className="h4 font-weight-normal text-uppercase text-center">Contact</h3>
-            <p className="h5 font-weight-normal m-0 text-center">Estimates, questions, information? Don't hesitate to contact me.</p>
-            <ContactForm/>
+            <p className="h5 font-weight-normal m-0 mb-5 text-center">Estimates, questions, information? Don't hesitate to contact me.</p>
+            <ContactForm />
             <p className="small mt-2 mb-3">Quick respond in 24 hours or less.</p>
         </section>
     </div>

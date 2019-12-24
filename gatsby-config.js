@@ -34,7 +34,7 @@ module.exports = {
       },
       {
       name:'About',
-      link:'/about'
+      link:'/#about'
       },
       {
       name:'Contact',
@@ -147,6 +147,14 @@ module.exports = {
         ],
       },
     },
+    {
+      resolve: 'gatsby-plugin-robots-txt',
+      options: {
+        host: 'https://andreaseracleous.com',
+        sitemap: 'https://andreaseracleous.com/sitemap.xml',
+        policy: [{ userAgent: '*', allow: '/' }]
+      }
+    },    
     /*   
     // Make sure this plugin is first in the array of plugins
     {
@@ -233,7 +241,9 @@ module.exports = {
     {
       resolve: `gatsby-plugin-offline`,
       options: {
-        precachePages: [`/`, `/about/`, `/blog`, `/blog/*`],
+        precachePages: [`/`, `/about/`, `/blog`, `/blog/*`,  
+        `/website-conversion/`, `/website-speed/`, `/setup-wordpress/`, 
+        `/resume/`, `/hire-me/`],
       },
     },
     {
@@ -244,6 +254,19 @@ module.exports = {
       },
       */
     },
+    // Add after these plugins if used
+    { 
+      resolve: `gatsby-plugin-purgecss`,
+      options: {
+        printRejected: true, // Print removed selectors and processed file names
+        develop: true, // Enable while using `gatsby develop`
+        //tailwind: true, // Enable tailwindcss support
+        whitelist: ['breadcrumb', 'breadcrumb__title', 'breadcrumb__link', 'breadcrumb__separator', 'breadcrumb__link__active'], // Don't remove this selector
+        // ignore: ['/ignored.css', 'prismjs/', 'docsearch.js/'], // Ignore files/folders
+        //purgeOnly : ['components/', '/main.css', 'bootstrap/'], // Purge only these files/folders
+      }
+    },       
+
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,

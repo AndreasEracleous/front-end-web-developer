@@ -26,7 +26,7 @@ const Menu = ({menuLinks}) => {
     }, []); 
     return (
         <div id="mainNav" className="d-flex">
-            <button className="btn btn-link text-decoration-none site-nav__open text-white my-auto" onClick={toggleMobileMenu}><FontAwesomeIcon icon={faBars} /> MENU</button>
+            <button className="btn text-decoration-none site-nav__open text-white my-auto" onClick={toggleMobileMenu}><FontAwesomeIcon icon={faBars} /></button>
             <nav className={`d-flex my-auto flex-column flex-md-row site-nav__list${mobileMenu?` site-nav__active`:``}`} onClick={toggleMobileMenu}>
                 {menuLinks.map(link => (
                 <Link to={link.link} key={link.name} className="nav-link font-weight-lighter text-lightprimary" activeClassName="active">
