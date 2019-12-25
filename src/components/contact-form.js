@@ -1,6 +1,6 @@
 import React from 'react'
 import { navigate } from 'gatsby-link'
-import Recaptcha from 'react-google-recaptcha'
+//import Recaptcha from 'react-google-recaptcha'
 
 const ContactForm = () => {
   const [state, setState] = React.useState({})
