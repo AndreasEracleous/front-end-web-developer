@@ -1,7 +1,7 @@
 {
-  "name": "Andreas Eracleous Website",
+  "name": "Andreas-Eracleous-website",
   "private": true,
-  "description": "Andreas Eracleous Website developing with Gatsby",
+  "description": "Andreas Eracleous website developing with Gatsby",
   "version": "0.1.0",
   "author": "Andreas Eracleous <andrew.eracleous@gmail.com>",
   "dependencies": {
