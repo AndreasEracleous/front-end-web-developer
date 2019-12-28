@@ -7,7 +7,7 @@
 //import "./src/assets/scss/main.scss"
 
 // Load Nunito Sans typeface
-require('typeface-nunito-sans')
+//require('typeface-nunito-sans')
 
 exports.shouldUpdateScroll = ({
 routerProps: { location },
