@@ -154,8 +154,7 @@ module.exports = {
         sitemap: 'https://andreaseracleous.com/sitemap.xml',
         policy: [{ userAgent: '*', allow: '/' }]
       }
-    },    
-    /*   
+    },     
     // Make sure this plugin is first in the array of plugins
     {
       resolve: `gatsby-plugin-google-analytics`,
@@ -163,6 +162,7 @@ module.exports = {
         trackingId: process.env.GATSBY_GOOGLE_ANALYTICS_TRACKING_ID,
       },   
     },
+    /*
     {
       resolve: 'gatsby-plugin-guess-js',
       options: {
@@ -207,7 +207,7 @@ module.exports = {
           delayLoadTime: 1000
       }
     },    
-     */
+    
     {
       resolve: 'gatsby-plugin-analytics-without-segment',
       options: {
@@ -221,6 +221,7 @@ module.exports = {
         },
       },
     },    
+     */
     `gatsby-plugin-netlify`,
     `gatsby-plugin-sitemap`,
     `gatsby-transformer-remark`,
