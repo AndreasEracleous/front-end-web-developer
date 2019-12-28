@@ -222,20 +222,12 @@ module.exports = {
       },
     },    
      */
-    {
-      resolve: `gatsby-plugin-netlify`,
-      options: {
-        headers: {}, // option to add more headers. `Link` headers are transformed by the below criteria
-        allPageHeaders: [], // option to add headers for all pages. `Link` headers are transformed by the below criteria
-        mergeSecurityHeaders: true, // boolean to turn off the default security headers
-        mergeLinkHeaders: true, // boolean to turn off the default gatsby js headers
-        mergeCachingHeaders: true, // boolean to turn off the default caching headers
-      },
-    },
+    `gatsby-plugin-netlify`,
     `gatsby-plugin-sitemap`,
     `gatsby-transformer-remark`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    `gatsby-plugin-offline`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -246,14 +238,6 @@ module.exports = {
         theme_color: `#0D47A1`,
         display: `minimal-ui`,
         icon: `src/assets/img/icon.png`, // This path is relative to the root of the site.
-      },
-    },
-    {
-      resolve: `gatsby-plugin-offline`,
-      options: {
-        precachePages: [`/`, `/about/`, `/blog`, `/blog/*`,  
-        `/website-conversion/`, `/website-speed/`, `/setup-wordpress/`, 
-        `/resume/`, `/hire-me/`],
       },
     },
     {
