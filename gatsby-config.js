@@ -65,7 +65,6 @@ module.exports = {
     },   
   },
   plugins: [
-    `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -73,6 +72,13 @@ module.exports = {
         path: `${__dirname}/src/assets/img`,
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `js`,
+        path: `${__dirname}/src/assets/js`,
+      },      
+    },    
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -154,7 +160,8 @@ module.exports = {
         sitemap: 'https://andreaseracleous.com/sitemap.xml',
         policy: [{ userAgent: '*', allow: '/' }]
       }
-    },     
+    },    
+     /* 
     // Make sure this plugin is first in the array of plugins
     {
       resolve: `gatsby-plugin-google-analytics`,
@@ -162,7 +169,6 @@ module.exports = {
         trackingId: process.env.GATSBY_GOOGLE_ANALYTICS_TRACKING_ID,
       },   
     },
-    /*
     {
       resolve: 'gatsby-plugin-guess-js',
       options: {
@@ -207,11 +213,11 @@ module.exports = {
           delayLoadTime: 1000
       }
     },    
-    
+    */
     {
       resolve: 'gatsby-plugin-analytics-without-segment',
       options: {
-        cdnUrl: 'https://cdnjs.cloudflare.com/ajax/libs/analytics.js/2.9.1/analytics.min.js',  // host yourself or use cdnjs (https://cdnjs.com/libraries/analytics.js)
+        cdnUrl: '/static/analytics.min-991ed8a33b8bdac08cd2c16f18dd2dcc.js',  // host yourself or use cdnjs (https://cdnjs.com/libraries/analytics.js)
         services: {
           // see integration https://github.com/segment-integrations/analytics.js-integration-google-analytics/blob/master/lib/index.js
           'Google Analytics': {
@@ -221,7 +227,7 @@ module.exports = {
         },
       },
     },    
-     */
+    `gatsby-plugin-react-helmet`,
     `gatsby-plugin-netlify`,
     `gatsby-plugin-sitemap`,
     `gatsby-transformer-remark`,
