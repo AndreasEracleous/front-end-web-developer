@@ -71,14 +71,7 @@ module.exports = {
         name: `img`,
         path: `${__dirname}/src/assets/img`,
       },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `js`,
-        path: `${__dirname}/src/assets/js`,
-      },      
-    },    
+    },   
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -161,7 +154,7 @@ module.exports = {
         policy: [{ userAgent: '*', allow: '/' }]
       }
     },    
-     /* 
+
     // Make sure this plugin is first in the array of plugins
     {
       resolve: `gatsby-plugin-google-analytics`,
@@ -169,6 +162,7 @@ module.exports = {
         trackingId: process.env.GATSBY_GOOGLE_ANALYTICS_TRACKING_ID,
       },   
     },
+     /*     
     {
       resolve: 'gatsby-plugin-guess-js',
       options: {
@@ -213,11 +207,10 @@ module.exports = {
           delayLoadTime: 1000
       }
     },    
-    */
     {
       resolve: 'gatsby-plugin-analytics-without-segment',
       options: {
-        cdnUrl: '/static/analytics.min-991ed8a33b8bdac08cd2c16f18dd2dcc.js',  // host yourself or use cdnjs (https://cdnjs.com/libraries/analytics.js)
+        cdnUrl: 'https://cdnjs.cloudflare.com/ajax/libs/analytics.js/2.9.1/analytics.js',  // host yourself or use cdnjs (https://cdnjs.com/libraries/analytics.js)
         services: {
           // see integration https://github.com/segment-integrations/analytics.js-integration-google-analytics/blob/master/lib/index.js
           'Google Analytics': {
@@ -227,13 +220,7 @@ module.exports = {
         },
       },
     },    
-    `gatsby-plugin-react-helmet`,
-    `gatsby-plugin-netlify`,
-    `gatsby-plugin-sitemap`,
-    `gatsby-transformer-remark`,
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
-    `gatsby-plugin-offline`,
+    */
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -266,7 +253,13 @@ module.exports = {
         //purgeOnly : ['components/', '/main.css', 'bootstrap/'], // Purge only these files/folders
       }
     },       
-
+    `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-netlify`,
+    `gatsby-plugin-sitemap`,
+    `gatsby-transformer-remark`,
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
+    `gatsby-plugin-offline`,
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
