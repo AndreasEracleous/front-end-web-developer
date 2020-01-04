@@ -12,7 +12,7 @@ module.exports = {
   siteMetadata: {
     title: `Andreas Eracleous`,
     occupation: `Front end web developer`,
-    description: `Andreas is a freelance Front-end Web Developer who is expert in converting PSD to Bootstrap website, HTML, CSS, JavaScript code and he is experienced with optimizing website load speed. Also, he is available for development jobs for helping you with your website and progressive web app.`,
+    description: `Andreas is a freelance Front end web developer in Cyprus, who specialises in building responsive website, progressive web application and web performance optimization. Also he is experienced on ReactJS, GatsbyJS, GraphQL and NodeJS development.`,
     siteUrl: `https://andreaseracleous.com`,
     author: `@AndrewEracleous`,
     menuLinks:[
