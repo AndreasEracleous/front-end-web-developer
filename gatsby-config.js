@@ -254,6 +254,7 @@ module.exports = {
       }
     },       
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-preload-link-crossorigin`,
     `gatsby-plugin-netlify`,
     `gatsby-plugin-sitemap`,
     `gatsby-transformer-remark`,
