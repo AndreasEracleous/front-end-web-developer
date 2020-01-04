@@ -15,7 +15,7 @@ const IndexPage = ({data}) => {
     const {twitter, linkedin, github} = socialLinks;
 return (    
 <Layout>
-    <SEO title={`Cyprus Freelance Front-End Web Developer`} description={description} />   
+    <SEO title={`Cyprus Freelance Front End Web Developer`} description={description} />   
         <HeroHeader >
             <div className="row pt-4 pt-lg-5 pb-2 text-white">
                 <div className="col-lg-8">

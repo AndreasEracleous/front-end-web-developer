@@ -751,7 +751,7 @@
     core-js-pure "^3.0.0"
     regenerator-runtime "^0.13.2"
 
-"@babel/runtime@^7.1.2", "@babel/runtime@^7.3.4", "@babel/runtime@^7.4.5", "@babel/runtime@^7.5.1", "@babel/runtime@^7.6.3", "@babel/runtime@^7.7.2", "@babel/runtime@^7.7.4", "@babel/runtime@^7.7.6":
+"@babel/runtime@^7.1.2", "@babel/runtime@^7.3.4", "@babel/runtime@^7.4.3", "@babel/runtime@^7.4.5", "@babel/runtime@^7.5.1", "@babel/runtime@^7.6.3", "@babel/runtime@^7.7.2", "@babel/runtime@^7.7.4", "@babel/runtime@^7.7.6":
   version "7.7.7"
   resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.7.7.tgz#194769ca8d6d7790ec23605af9ee3e42a0aa79cf"
   integrity sha512-uCnC2JEVAu8AKB5do1WRIsvrdJ0flYx/A/9f/6chdacnEZ7LmavjdsDXr5ksYBegxtuTPR5Va9/+13QF/kFkCA==
@@ -5730,6 +5730,13 @@ gatsby-plugin-postcss@^2.1.15:
   dependencies:
     "@babel/runtime" "^7.7.6"
     postcss-loader "^3.0.0"
+
+gatsby-plugin-preload-link-crossorigin@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-preload-link-crossorigin/-/gatsby-plugin-preload-link-crossorigin-1.0.2.tgz#75c291a822c7e88f5f3a11c51b954f1c58416a5a"
+  integrity sha512-3wnud525A6vfHvdZLVlhL8ZQq7wQ2SWJdaPBllwh2l5xUXw+IZF0Bc66BnGGVvfEX1dIyea/2hg0drzFjT4seQ==
+  dependencies:
+    "@babel/runtime" "^7.4.3"
 
 gatsby-plugin-purgecss@^4.0.1:
   version "4.0.1"
