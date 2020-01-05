@@ -49,12 +49,12 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     })
   })
 }
-/*
+
 const fetch = require("node-fetch")
 const fs = require('fs');
 
 exports.sourceNodes = ({ actions, createNodeId, createContentDigest }) => {
-  const apiUrl = `https://www.googletagmanager.com/gtag/js?id=${process.env.GATSBY_GOOGLE_ANALYTICS_TRACKING_ID}/analytics.min.js`
+  const apiUrl = `https://cdnjs.cloudflare.com/ajax/libs/analytics.js/2.9.1/analytics.js`
 
   return (
     fetch(apiUrl)
@@ -66,4 +66,4 @@ exports.sourceNodes = ({ actions, createNodeId, createContentDigest }) => {
       })
   )
 }
-*/
+
