@@ -154,59 +154,6 @@ module.exports = {
         policy: [{ userAgent: '*', allow: '/' }]
       }
     },    
-/*
-    // Make sure this plugin is first in the array of plugins
-    {
-      resolve: `gatsby-plugin-google-analytics`,
-      options: {
-        trackingId: process.env.GATSBY_GOOGLE_ANALYTICS_TRACKING_ID,
-      },   
-    },     
-    {
-      resolve: 'gatsby-plugin-guess-js',
-      options: {
-        GAViewID: process.env.GATSBY_GOOGLE_ANALYTICS_VIEW_ID, // Google Analytics view ID
-        jwt: {
-          client_email: process.env.GOOGLE_SERVICE_ACCOUNT_EMAIL,
-          private_key: process.env.GOOGLE_SERVICE_ACCOUNT_PRIVATE_KEY,
-        },
-        minimumThreshold: 0.03,
-        period: {
-          startDate: new Date("2018-5-5"),
-          endDate: new Date("2018-6-10"),
-        },      
-      },  
-    },
-
-    {
-      resolve: `gatsby-plugin-segment-js`,
-      options: {
-          // your segment write key for your production environment
-          // when process.env.NODE_ENV === 'production'
-          // required; non-empty string
-          prodKey: process.env.GATSBY_SEGMENT_WRITE_KEY,
-
-          // if you have a development env for your segment account, paste that key here
-          // when process.env.NODE_ENV === 'development'
-          // optional; non-empty string
-          devKey: process.env.GATSBY_SEGMENT_WRITE_KEY,
-
-          // boolean (defaults to false) on whether you want
-          // to include analytics.page() automatically
-          // if false, see below on how to track pageviews manually
-          trackPage: false,
-
-          // boolean (defaults to false) on whether to load segment
-          // after a user action (scroll or route change) + delay
-          // this will bring down your TTI but you might miss 1 second of data.
-          // see here for more info on TTI: https://github.com/GoogleChrome/lighthouse/blob/master/docs/scoring.md#performance
-          delayLoad: false,
-
-          // time to wait after scroll action in ms. Defaults to 1000ms
-          delayLoadTime: 1000
-      }
-    },    
-    */
     {
       resolve: 'gatsby-plugin-analytics-without-segment',
       options: {
@@ -252,6 +199,7 @@ module.exports = {
         //purgeOnly : ['components/', '/main.css', 'bootstrap/'], // Purge only these files/folders
       }
     },       
+    `gatsby-plugin-preact`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-preload-link-crossorigin`,
     `gatsby-plugin-netlify`,
@@ -260,8 +208,5 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-offline`,
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
   ]
 }
