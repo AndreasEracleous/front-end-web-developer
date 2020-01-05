@@ -7,7 +7,7 @@
 
 import React from "react"
 import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
+import { withPrefix, useStaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
 import Footer from "./footer"
@@ -42,6 +42,17 @@ const Layout = ({ children }) => {
           <style>{dom.css()}</style>
       </Helmet>    
       */  
+      <Helmet>
+        <script async src={withPrefix('analytics.min.js')}></script>
+        <script>{`
+            <!-- Global site tag (gtag.js) - Google Analytics -->
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', '${process.env.GATSBY_GOOGLE_ANALYTICS_TRACKING_ID}');
+            `}</script>
+      </Helmet>     
      }
       <Header siteTitle={title}
         siteOccupation={occupation}

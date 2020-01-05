@@ -49,3 +49,20 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     })
   })
 }
+
+const fetch = require("node-fetch")
+const fs = require('fs');
+
+exports.sourceNodes = ({ actions, createNodeId, createContentDigest }) => {
+  const apiUrl = `https://www.googletagmanager.com/gtag/js?id=${process.env.GATSBY_GOOGLE_ANALYTICS_TRACKING_ID}/analytics.min.js`
+
+  return (
+    fetch(apiUrl)
+    .then(res => {
+      //const dest = fs.createWriteStream('./analytics.js');
+      const dest = fs.createWriteStream(`${__dirname}/static/analytics.min.js`);
+      console.log(dest)
+      res.body.pipe(dest);
+      })
+  )
+}

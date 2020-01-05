@@ -36,5 +36,4 @@ function anchorScroll(location) {
     } else {
         window.scrollTo(0, 0);
     }
-
 }
