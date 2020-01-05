@@ -186,10 +186,10 @@ module.exports = {
       options: {
         printRejected: true, // Print removed selectors and processed file names
         develop: true, // Enable while using `gatsby develop`
-        //tailwind: true, // Enable tailwindcss support
         whitelist: ['breadcrumb', 'breadcrumb__title', 'breadcrumb__link', 'breadcrumb__separator', 'breadcrumb__link__active'], // Don't remove this selector
       }
     },       
+    `gatsby-plugin-preact`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-netlify`,
     `gatsby-plugin-sitemap`,
