@@ -199,7 +199,6 @@ module.exports = {
         //purgeOnly : ['components/', '/main.css', 'bootstrap/'], // Purge only these files/folders
       }
     },       
-    `gatsby-plugin-preact`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-preload-link-crossorigin`,
     `gatsby-plugin-netlify`,
