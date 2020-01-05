@@ -206,7 +206,7 @@ module.exports = {
           delayLoadTime: 1000
       }
     },    
-    
+    */
     {
       resolve: 'gatsby-plugin-analytics-without-segment',
       options: {
@@ -220,7 +220,6 @@ module.exports = {
         },
       },
     },    
-    */
     {
       resolve: `gatsby-plugin-manifest`,
       options: {

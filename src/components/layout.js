@@ -42,6 +42,7 @@ const Layout = ({ children }) => {
           <style>{dom.css()}</style>
       </Helmet>    
       */  
+     /*
       <Helmet>
         <script async src={withPrefix('analytics.min.js')}></script>
         <script>{`
@@ -53,6 +54,7 @@ const Layout = ({ children }) => {
             gtag('config', '${process.env.GATSBY_GOOGLE_ANALYTICS_TRACKING_ID}');
             `}</script>
       </Helmet>     
+      */
      }
       <Header siteTitle={title}
         siteOccupation={occupation}

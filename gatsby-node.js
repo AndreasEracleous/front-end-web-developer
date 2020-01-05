@@ -49,7 +49,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     })
   })
 }
-
+/*
 const fetch = require("node-fetch")
 const fs = require('fs');
 
@@ -66,3 +66,4 @@ exports.sourceNodes = ({ actions, createNodeId, createContentDigest }) => {
       })
   )
 }
+*/
