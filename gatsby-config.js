@@ -179,14 +179,7 @@ module.exports = {
         icon: `src/assets/img/icon.png`, // This path is relative to the root of the site.
       },
     },
-    {
-      resolve: `gatsby-plugin-sass`,
-      /*options: {
-        postCssPlugins: [somePostCssPlugin()],
-        precision: 6,
-      },
-      */
-    },
+    `gatsby-plugin-sass`,
     // Add after these plugins if used
     { 
       resolve: `gatsby-plugin-purgecss`,
@@ -195,8 +188,6 @@ module.exports = {
         develop: true, // Enable while using `gatsby develop`
         //tailwind: true, // Enable tailwindcss support
         whitelist: ['breadcrumb', 'breadcrumb__title', 'breadcrumb__link', 'breadcrumb__separator', 'breadcrumb__link__active'], // Don't remove this selector
-        // ignore: ['/ignored.css', 'prismjs/', 'docsearch.js/'], // Ignore files/folders
-        //purgeOnly : ['components/', '/main.css', 'bootstrap/'], // Purge only these files/folders
       }
     },       
     `gatsby-plugin-react-helmet`,
