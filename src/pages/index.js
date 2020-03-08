@@ -75,12 +75,13 @@ return (
             </div>
         </article>
     </section>
+    
     <section id="services" className="container mt-5 pb-5">
         <h3 className="h4 font-weight-normal text-uppercase">WHAT I OFFER</h3>
         <article className="mt-4">
-            <p>I am currently available on UpWork for front-end development jobs. I can help you with: <strong>website performance optimization</strong>, <strong>Wordpress installation</strong> and <strong>conversion design to Bootstrap</strong>, <strong>HTML, CSS, JS code</strong> in which adaptive and <strong>responsive templates</strong> for all devices by using the latest web technologies.</p>
+            <p>I am currently available on UpWork for front-end development jobs. I can help you with: <strong>website performance optimization</strong>, <strong>Wordpress site</strong> and <strong>conversion design to Bootstrap</strong>, <strong>HTML, CSS, JS code</strong> in which adaptive and <strong>responsive templates</strong> for all devices by using the latest web technologies.</p>
         </article>
-
+        {/*
         <div className="row">
             <div className="col-md-6 col-lg mt-4">
                 <article className="d-flex flex-column bg-white shadow-sm border p-4 h-100">
@@ -117,12 +118,14 @@ return (
                 </article>
             </div>
         </div>
+        */}
         <h3 className="h4 font-weight-normal text-uppercase mt-5 mb-4 text-center">Why you might want to hire me</h3>
         <p className="mb-0">I have over 10 years of web development experience that I can definitely help you with your front-end web developments.</p>
         <p className="text-center">All these years of work experience I help several clients and companies collaborate remotely to build responsive websites and web applications.</p>
         <p className="text-center">My mission is to perform your project successfully like it was my own project. I will work hard and make sure to get everything done for you, on time. Sometimes I even work extra time when it is needed to perfect a job from a client without more charging.</p>
         <p className="text-center m-0">I have a strong desire to make sure you are happy and I won’t disappoint you.</p>
     </section>
+    
     <div id="work" className="bg-white py-5">
         <section className="container">
             <h2 className="h4 font-weight-normal text-uppercase text-center">Check out a few of my project, I've worked on.</h2>

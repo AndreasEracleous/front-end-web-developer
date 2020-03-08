@@ -11,7 +11,7 @@ import {useStaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
 import Footer from "./footer"
-import Helmet from 'react-helmet'
+//import Helmet from 'react-helmet'
 //import { config, dom } from '@fortawesome/fontawesome-svg-core'
 import "../assets/scss/main.scss"
 //import "../assets/scss/header.scss"
