@@ -189,7 +189,7 @@ module.exports = {
         whitelist: ['breadcrumb', 'breadcrumb__title', 'breadcrumb__link', 'breadcrumb__separator', 'breadcrumb__link__active'], // Don't remove this selector
       }
     },       
-    `gatsby-plugin-preact`,
+    `gatsby-plugin-split-css`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-netlify`,
     `gatsby-plugin-sitemap`,

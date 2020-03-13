@@ -11,7 +11,7 @@ import {useStaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
 import Footer from "./footer"
-//import Helmet from 'react-helmet'
+import Helmet from 'react-helmet'
 //import { config, dom } from '@fortawesome/fontawesome-svg-core'
 import "../assets/scss/main.scss"
 //import "../assets/scss/header.scss"
@@ -56,6 +56,12 @@ const Layout = ({ children }) => {
       </Helmet>     
       */
      }
+
+<Helmet
+    meta={[
+    { name: 'google-site-verification', content: 'xa0E3FvD7H7xRhk5pdtp0gG4dcnAAoL1D4F-VzPPAcE'  },
+    ]}
+/>
       <Header siteTitle={title}
         siteOccupation={occupation}
         menuLinks={menuLinks}

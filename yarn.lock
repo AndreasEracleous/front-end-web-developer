@@ -5739,13 +5739,6 @@ gatsby-plugin-postcss@^2.1.15:
     "@babel/runtime" "^7.7.6"
     postcss-loader "^3.0.0"
 
-gatsby-plugin-preact@^3.1.24:
-  version "3.1.24"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-preact/-/gatsby-plugin-preact-3.1.24.tgz#adc765c29da2923b7597bc12602b181d33585e48"
-  integrity sha512-gKzfYGH/nvY33LSDICO7fSPWWGJldm1yJPC0vaGXm2i5dtP8+YHGKSOtnBELII/aF5J4055NY5zWudm2R2JQ0g==
-  dependencies:
-    "@babel/runtime" "^7.7.6"
-
 gatsby-plugin-purgecss@^4.0.1:
   version "4.0.1"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-purgecss/-/gatsby-plugin-purgecss-4.0.1.tgz#e9b85eb6189aa20fff9f0c2e0c8ce748f64624bb"
@@ -5813,6 +5806,11 @@ gatsby-plugin-sitemap@^2.2.22:
     minimatch "^3.0.4"
     pify "^3.0.0"
     sitemap "^1.13.0"
+
+gatsby-plugin-split-css@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-split-css/-/gatsby-plugin-split-css-1.0.2.tgz#d0a74b6411b5fcd563adfcfca31afcb8bdd6a789"
+  integrity sha512-7Scl6PJa20p1rD0S8ikkSlxh2cIWZ5A//E0Vf6AAzCIl6fc/g38zRB+Nakh3c7qJVHypCD0FWmA9IeYy6AdKUQ==
 
 gatsby-react-router-scroll@^2.1.19:
   version "2.1.19"
