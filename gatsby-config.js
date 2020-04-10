@@ -34,7 +34,7 @@ module.exports = {
       },
       {
       name:'About',
-      link:'/#about'
+      link:'/about'
       },
       {
       name:'Contact',
@@ -48,7 +48,7 @@ module.exports = {
       },      
       twitter: {
         name: 'Twitter',
-        link: 'https://twitter.com/AndrewEracleous'
+        link: 'https://twitter.com/SpooksPower'
       },
       github: {
         name: 'Github',

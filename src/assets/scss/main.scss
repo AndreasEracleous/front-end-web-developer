@@ -1,9 +1,7 @@
 // Bootstrap custom theme
-$theme-colors: (
-  "primary": #0d47a1,
+$theme-colors: ("primary": #0d47a1,
   "secondary": #757575,
-  "success" : #9ccc65
-);
+  "success" : #9ccc65);
 
 @import 'bootstrap.custom';
 @import 'layout';

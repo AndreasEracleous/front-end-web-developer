@@ -19,9 +19,9 @@ return (
         <HeroHeader >
             <div className="row pt-4 pt-lg-5 pb-2 text-white">
                 <div className="col-lg-8">
-                    <h1 className="font-weight-normal text-uppercase">Andreas Eracleous</h1>
+                    <h1 className="font-weight-normal text-capitalize">Hi, I'm Andreas 👋</h1>
                     <h2 className="lead">Cyprus Front-end web developer for ReactJS, NodeJS, GatsbyJS and Bootstrap</h2>
-                    <p className="font-weight-normal mt-4 mb-3">Hi, I’m Andreas. I'm a freelance Front end web developer in Cyprus, who specialises in building <strong>responsive website</strong>, <strong>progressive web application</strong> and <strong>web performance optimization</strong>. Lately, I focused primarily on ReactJS, GatsbyJS, GraphQL and NodeJS development.</p>
+                    <p className="font-weight-normal mt-4 mb-3">I'm a front end web developer in Cyprus, who specialises in building <strong>responsive website</strong>, <strong>progressive web application</strong> and <strong>web performance optimization</strong>. Lately, I focused primarily on ReactJS, GatsbyJS, GraphQL and NodeJS development.</p>
                     { /*
                     <div className="d-flex">
                         <a href="#" className="btn btn-outline-light px-4 mr-3">Contact me</a>
@@ -29,62 +29,78 @@ return (
                     </div>
                     */ }
                 </div>
+                
                 <div className="col-lg mt-5 my-lg-auto">
-                    <Image filename="home/responsive-web-design.png" alt="Responsive Web Design" className="d-block img-fluid ml-auto mr-auto mr-lg-0 ml-lg-auto" style={{maxWidth: '380px'}} />
+                    <Image filename="common/andreas.jpg" alt="Andreas Eracleous" className="img-thumbnail border-0 shadow img-fluid mb-1" style={{maxWidth:'160px'}} />
+                    <div className="d-flex justify-content-between" style={{maxWidth:'160px'}}>
+                    <a href={twitter.link} target="_blank" rel="noopener noreferrer" className="p-1 text-white"><FontAwesomeIcon icon={faTwitter} size="2x" /></a>
+                    <a href={linkedin.link} target="_blank" rel="noopener noreferrer" className="p-1 text-white"><FontAwesomeIcon icon={faLinkedin} size="2x" /></a>
+                    <a href={github.link} target="_blank" rel="noopener noreferrer" className="p-1 text-white"><FontAwesomeIcon icon={faGithub} size="2x" /></a>
+                    </div>
                 </div>
             </div>
-            <div className="d-flex flex-wrap mt-3">
+            <hr/>
+            <div className="d-flex flex-wrap">
                 <p className="my-auto font-weight-normal m-0 text-white">I'M GREAT AT:</p>
-                <div className="d-flex flex-wrap">
-                    <FontAwesomeIcon icon={faHtml5} size="3x" className="text-white my-2 mx-4" />
-                    <FontAwesomeIcon icon={faCss3Alt} size="3x" className="text-white my-2 mx-4" />
-                    <FontAwesomeIcon icon={faJs} size="3x" className="text-white my-2 mx-4" />
-                    <FontAwesomeIcon icon={faBootstrap} size="3x" className="text-white my-2 mx-4" />
-                    <FontAwesomeIcon icon={faReact} size="3x" className="text-white my-2 mx-4" />
-                    <FontAwesomeIcon icon={faNodeJs} size="3x" className="text-white my-2 mx-4" />
-                    <FontAwesomeIcon icon={faSass} size="3x" className="text-white my-2 mx-4" />
+                <div className="d-flex flex-wrap text-center text-white">
+                    <div className="d-flex flex-column">
+                        <FontAwesomeIcon icon={faHtml5} size="3x" className="my-2 mx-4" /> 
+                        <small>HTML5</small>
+                    </div>
+                    <div className="d-flex flex-column">
+                    <FontAwesomeIcon icon={faCss3Alt} size="3x" className="my-2 mx-4" />
+                    <small>CSS3</small>
+                    </div>
+                    <div className="d-flex flex-column">
+                    <FontAwesomeIcon icon={faJs} size="3x" className="my-2 mx-4" />
+                    <small>JS</small>
+                    </div>
+                    <div className="d-flex flex-column">
+                    <FontAwesomeIcon icon={faBootstrap} size="3x" className="my-2 mx-4" />
+                    <small>Bootstrap</small>
+                    </div>
+                    <div className="d-flex flex-column">
+                    <FontAwesomeIcon icon={faReact} size="3x" className="my-2 mx-4" />
+                    <small>ReactJS</small>
+                    </div>
+                    <div className="d-flex flex-column">
+                    <FontAwesomeIcon icon={faNodeJs} size="3x" className="my-2 mx-4" />
+                    <small>NodeJS</small>
+                    </div>
+                    <div className="d-flex flex-column">
+                    <FontAwesomeIcon icon={faSass} size="3x" className="my-2 mx-4" />
+                    <small>SASS</small>
+                    </div>
                 </div>
             </div>
-            <p className="text-white font-weight-normal m-0">Specialize in front end development and design, with knowledge in back end development.</p>
+            <hr/>
+            <p className="text-white font-weight-normal mt-3 mb-0">Specialize in front end development with knowledge in back end development.</p>
         </HeroHeader>
         <div className="bg-opacity py-2 text-dark">
             <div className="d-flex container">
                 <p className="font-weight-normal my-0">Top Rated Freelancer on <a href="https://www.upwork.com/fl/andreaseracleous" target="_blank" rel="noopener noreferrer" className="text-primary">UpWork</a></p>
             </div>
         </div>     
-
-    <section id="about" className="mt-5">
-        <article className="container">
+{
+    /*
+    <section id="about" className="container mt-5">
             <h3 className="h4 font-weight-normal text-uppercase mb-4">About</h3>
-            <div className="row">
-                <div className="col-sm-4 col-md-3 col-lg mb-4">
-                    <Image filename="common/andreas.jpg" alt="Andreas Eracleous" className="img-thumbnail img-fluid mb-1" style={{maxWidth:'250px'}} />
-                    <div className="d-flex justify-content-between" style={{maxWidth:'250px'}}>
-                    <a href={twitter.link} target="_blank" rel="noopener noreferrer" className="p-1 twitter-icon"><FontAwesomeIcon icon={faTwitter} size="2x" /></a>
-                    <a href={linkedin.link} target="_blank" rel="noopener noreferrer" className="p-1 linkedin-icon"><FontAwesomeIcon icon={faLinkedin} size="2x" /></a>
-                    <a href={github.link} target="_blank" rel="noopener noreferrer" className="p-1 github-icon"><FontAwesomeIcon icon={faGithub} size="2x" /></a>
-                    </div>
-                </div>
-                <div className="col-sm-8 col-md-9 col-lg-10">
-                    <p className="font-weight-bold">Hi, I’m Andreas and I live in Cyprus in a small beautiful island. I am primarily a Front-end Web Developer with a background in computer science and passion for web technology. I work independently as Freelance Web Developer by helping companies and individuals collaborate remotely using an online freelancing platform called Upwork.</p>
-                    <p>Web for me is not simply another avenue of the computing industry but it represents the future of what we will be interacting with. I have a strong technical background and I have been fortunate to work as a developer.</p>
-                    <p>Front end developments are where my heart is at the moment but I see the place for Back end developments how they will evolve in the future.</p>
-                    <p>As a freelancer I have developed a bunch responsive websites and on a number of Android applications.</p>
-                    <Link to="/about" className="btn btn-sm btn-outline-primary">Read more</Link>
-                </div>
-            </div>
-        </article>
+            <p className="font-weight-bold">Hi, I’m Andreas and I live in Cyprus in a small beautiful island. I am primarily a Front-end Web Developer with a background in computer science and passion for web technology. I work independently as Freelance Web Developer by helping companies and individuals collaborate remotely using an online freelancing platform called Upwork.</p>
+            <p>Web for me is not simply another avenue of the computing industry but it represents the future of what we will be interacting with. I have a strong technical background and I have been fortunate to work as a developer.</p>
+            <p>Front end developments are where my heart is at the moment but I see the place for Back end developments how they will evolve in the future.</p>
+            <p>As a freelancer I have developed a bunch responsive websites and on a number of Android applications.</p>
+            <Link to="/about" className="btn btn-sm btn-primary float-right">Read more</Link>
+          
     </section>
-    
+    */
+    }
+
     <section id="services" className="container mt-5 pb-5">
-        <h3 className="h4 font-weight-normal text-uppercase">WHAT I OFFER</h3>
-        <article className="mt-4">
-            <p>I am currently available on UpWork for front-end development jobs. I can help you with: <strong>website performance optimization</strong>, <strong>Wordpress site</strong> and <strong>conversion design to Bootstrap</strong>, <strong>HTML, CSS, JS code</strong> in which adaptive and <strong>responsive templates</strong> for all devices by using the latest web technologies.</p>
-        </article>
-        {/*
+
+        <h3 className="h4 font-weight-normal text-uppercase ">WHAT I OFFER</h3>
         <div className="row">
             <div className="col-md-6 col-lg mt-4">
-                <article className="d-flex flex-column bg-white shadow-sm border p-4 h-100">
+                <article className="d-flex flex-column bg-white shadow rounded p-4 h-100">
                     <header className="d-flex mb-3 text-primary">
                         <FontAwesomeIcon icon={faDesktop} size="4x" />
                         <h3 className="h5 text-capitalize font-weight-normal my-auto ml-2">PSD to Bootstrap conversion</h3>
@@ -95,7 +111,7 @@ return (
                 </article>
             </div>
             <div className="col-md-6 col-lg mt-4">
-                <article className="d-flex flex-column bg-white shadow-sm border p-4 h-100">
+                <article className="d-flex flex-column bg-white shadow rounded p-4 h-100">
                     <header className="d-flex mb-3 text-primary">
                         <FontAwesomeIcon icon={faRocket} size="4x" />
                         <h3 className="h5 text-capitalize font-weight-normal my-auto ml-2">Make web faster</h3>
@@ -107,7 +123,7 @@ return (
             </div>
 
             <div className="col-md-6 col-lg mt-4">
-                <article className="d-flex flex-column bg-white shadow-sm border p-4 h-100">
+                <article className="d-flex flex-column bg-white shadow rounded p-4 h-100">
                     <header className="d-flex mb-3 text-primary">
                         <FontAwesomeIcon icon={faWordpress} size="4x" />
                         <h3 className="h5 text-capitalize font-weight-normal my-auto ml-2">Setup WordPress</h3>
@@ -118,22 +134,26 @@ return (
                 </article>
             </div>
         </div>
-        */}
-        <h3 className="h4 font-weight-normal text-uppercase mt-5 mb-4 text-center">Why you might want to hire me</h3>
+        
+        <article>
+        <h3 className="h4 font-weight-normal text-uppercase mt-5 mb-4">Why you might want to hire me</h3>
         <p className="mb-0">I have over 10 years of web development experience that I can definitely help you with your front-end web developments.</p>
-        <p className="text-center">All these years of work experience I help several clients and companies collaborate remotely to build responsive websites and web applications.</p>
-        <p className="text-center">My mission is to perform your project successfully like it was my own project. I will work hard and make sure to get everything done for you, on time. Sometimes I even work extra time when it is needed to perfect a job from a client without more charging.</p>
-        <p className="text-center m-0">I have a strong desire to make sure you are happy and I won’t disappoint you.</p>
+        <p className="">All these years of work experience I help several clients and companies collaborate remotely to build responsive websites and web applications.</p>
+        <p className="">My mission is to perform your project successfully like it was my own project. I will work hard and make sure to get everything done for you, on time. Sometimes I even work extra time when it is needed to perfect a job from a client without more charging.</p>
+        <p className="m-0">I have a strong desire to make sure you are happy and I won’t disappoint you.</p>
+        <hr/>
+        <p>I am currently available on UpWork for front-end development jobs. I can help you with: <strong>website performance optimization</strong>, <strong>Wordpress site</strong> and <strong>conversion design to Bootstrap</strong>, <strong>HTML, CSS, JS code</strong> in which adaptive and <strong>responsive templates</strong> for all devices by using the latest web technologies.</p>
+        </article>
     </section>
     
-    <div id="work" className="bg-white py-5">
+    <div id="work" className="bg-primary text-white py-5 border-dark border-top border-bottom">
         <section className="container">
             <h2 className="h4 font-weight-normal text-uppercase text-center">Check out a few of my project, I've worked on.</h2>
             <p className="h5 font-weight-normal m-0 text-center">I help several clients and companies collaborate remotel to build responsive websites and applications.</p>
 
             <article className="row mt-5">
                 <figure className="col-lg-5">
-                    <Image filename="projects/websites/cryptocoininvest/cryptocoininvest.png" alt="Crypto Coin Invest" className="img-fluid" />
+                    <Image filename="projects/websites/cryptocoininvest/cryptocoininvest.png" alt="Crypto Coin Invest" className="border-0 img-thumbnail img-fluid shadow" />
                 </figure>
                 <div className="col-lg">
                     <header>
@@ -141,14 +161,14 @@ return (
                     </header>
                     <p>It is a web app for cryptocurrencies to quickly and easily filter crypto coins. Using filters, the user can handle the crypto data faster and see undervalued coins, based on their market cap.</p>
                     <p>CryptoCoinInvest is built on a VueJS framework for faster DOM (Document Object Model) manipulation and data utilization of the app. On the backend CryptoCoinInvest uses an NodeJS tech on DigitalOcean using components and services to handle REST API of data.</p>
-                    <a href="https://cryptocoininvest.com/" target="_blank" rel="noopener noreferrer" className="btn btn-sm btn-outline-primary">Visit website</a>
+                    <a href="https://cryptocoininvest.com/" target="_blank" rel="noopener noreferrer" className="btn btn-sm btn-outline-light">Visit website</a>
                 </div>
             </article>
 
             <article className="row mt-5">
 
                 <figure className="col-lg-5">
-                    <Image filename="projects/websites/energi/energi.png" alt="Energi" className="img-fluid" />
+                    <Image filename="projects/websites/energi/energi.png" alt="Energi" className="border-0 img-thumbnail img-fluid shadow" />
                 </figure>
                 <div className="col-lg">
                     <header>
@@ -156,14 +176,14 @@ return (
                     </header>
                     <p>Energi significantly improves upon the self-funded governance concepts found in projects like Dash and Smartcash, and has the largest treasury fund out of any cryptocurrency.</p>
                     <p>Energi (NRG) is developed on Bootstrap framework to be responsive on mobile devices using HTML, CSS, and JS tech. Implemented in WordPress platform and Optimized the code for better web performance.</p>
-                    <a href="https://www.energi.world/" target="_blank" rel="noopener noreferrer" className="btn btn-sm btn-outline-primary">Visit website</a>
+                    <a href="https://www.energi.world/" target="_blank" rel="noopener noreferrer" className="btn btn-sm btn-outline-light">Visit website</a>
                 </div>
             </article>
 
             <article className="row mt-5">
 
                 <figure className="col-lg-5">
-                    <Image filename="projects/websites/maida/maida.png" alt="Energi" className="img-fluid" />
+                    <Image filename="projects/websites/maida/maida.png" alt="Energi" className="border-0 img-thumbnail img-fluid shadow" />
                 </figure>
                 <div className="col-lg">
                     <header>
@@ -171,7 +191,7 @@ return (
                     </header>
                     <p>Maida is a website for Pipe Relining business on Sydney.</p>
                     <p>Worked on Maida website for fixing JavaScript, CSS, and HTML issues code and improving responsive pages, implementing new features, improving UI/UX design and SEO.</p>
-                    <a href="https://www.maida.com.au/" target="_blank" rel="noopener noreferrer" className="btn btn-sm btn-outline-primary">Visit website</a>
+                    <a href="https://www.maida.com.au/" target="_blank" rel="noopener noreferrer" className="btn btn-sm btn-outline-light">Visit website</a>
                 </div>
 
             </article>
@@ -185,14 +205,14 @@ return (
         <p className="m-0">Trusted by <a href="https://www.upwork.com/fl/andreaseracleous" target="_blank" rel="noopener noreferrer" className="text-primary">UpWork</a></p>
         <div className="row">
             <div className="col-md-6 col-lg">
-                <blockquote className="bg-white border shadow-sm p-4 mt-4">
+                <blockquote className="bg-white shadow rounded p-4 mt-4">
                     <Image filename="testimonials/ryan-goodman.jpeg" alt="Ryan Goodman" className="img-fluid mx-auto rounded-circle" style={{width: '100px'}} />
                     <h4 className="h5 mt-3 font-weight-normal">Ryan Goodman</h4>
                     <p className="font-weight-light">I have worked with Andreas for over a year on various JavaScript based applications. He is everything you want in a developer. He is consistent, asks the right questions, is clever, and always seems to get the job done right. He has assisted me in many customer projects requiring HTML5 / Javascript dashboards and transactional apps. I highly recommend Andreas.</p>
                 </blockquote>
             </div>
             <div className="col-md-6 col-lg">
-                <blockquote className="bg-white border shadow-sm p-4 mt-4">
+                <blockquote className="bg-white shadow rounded p-4 mt-4">
                     <Image filename="testimonials/joel-ahern.jpeg" alt="Joel Ahern" className="img-fluid mx-auto rounded-circle" style={{width: '100px'}} />
                     <h4 className="h5 mt-3 font-weight-normal">Joel Ahern</h4>
                     <p className="font-weight-light">Of the 20 something web developers &amp; digital marketers I have used for various tasks in the past year, Andreas is the first person I talk to when I have an idea. He takes ideas and makes them better than you were originally thinking and he never asks you to review something that isn't finished.</p>
@@ -200,7 +220,7 @@ return (
                 </blockquote>
             </div>
             <div className="col-md-6 col-lg">
-                <blockquote className="bg-white border shadow-sm p-4 mt-4">
+                <blockquote className="bg-white shadow rounded p-4 mt-4">
                     <Image filename="testimonials/justin-atlan.jpeg" alt="Justin Atlan" className="img-fluid mx-auto rounded-circle" style={{width: '100px'}} />
                     <h4 className="h5 mt-3 font-weight-normal">Justin Atlan</h4>
                     <p className="font-weight-light">Andreas, thanks so much for being our go to guy to get anything front-end up on the web as fast and efficiently as possible. You always go the extra mile and you always over-deliver. Thanks for being a great part of our team whenever we need you!</p>
