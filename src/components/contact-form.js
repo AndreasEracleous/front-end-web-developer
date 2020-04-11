@@ -80,7 +80,7 @@ const ContactForm = () => {
             <textarea name="message" className="form-control" id="inputMessage" rows="8" onChange={handleChange} required></textarea>
         </div>
         {/*<Recaptcha ref={recaptchaRef} sitekey={RECAPTCHA_KEY} />*/}
-        <button type="submit" className="btn btn-lg btn-success mt-3 mt-md-0 px-5 float-right">Submit</button>
+        <button type="submit" className="btn btn-lg btn-primary mt-3 mt-md-0 px-5 float-right">Submit</button>
     </form>
   )
 }

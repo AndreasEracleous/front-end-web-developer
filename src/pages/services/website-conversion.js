@@ -2,7 +2,6 @@ import React from "react"
 import { Link } from "gatsby"
 import Layout from "../../components/layout"
 import SEO from "../../components/seo"
-import Image from "../../components/image"
 
 const WebsiteConversionPage = () => (
 <Layout>
@@ -13,7 +12,6 @@ const WebsiteConversionPage = () => (
         </div>
     </div>      
     <div className="container py-5">
-        <Image filename="pages/responsive-design-300x187.png" alt="Andreas Eracleous" className="img-fluid" style={{maxWidth: '300px'}} />
         <p>I help you to convert your design files (PSD, AI, PNG) to HTML and CSS responsive web layout, promise you fast turnaround time and Pixel-Perfect conversion. Pages are tested in all modern browsers and devices (Android, iPhone).</p>
         <p>I am ready to work on your project today, using my PSD to HTML conversion skills. I have over 10 years of web development experience that I can definitely help you to convert your PSD to HTML code.</p>
         <p>Most of all I will make sure that you will receive the best possible HTML conversion code, be cross browser compatible, so it will run in most important browsers and devices without any problems and make it a W3C compliant HTML5/CSS3 markup.</p>
@@ -26,7 +24,7 @@ const WebsiteConversionPage = () => (
                     <i className="fal fa-envelope size-50 text-secondary mb-3"></i>
                     <p>Need a project quote or more information about my services?
                         <br/>Click the button below for the fastest 24 hour response.</p>
-                    <Link to="/#contact" className="btn btn-lg btn-success">Contact</Link>
+                    <Link to="/#contact" className="btn btn-lg btn-primary">Contact</Link>
                     <small className="d-block text-secondary mt-2">Quick respond in 24 hours or less.</small>
                 </div>
             </div>

@@ -2,7 +2,6 @@ import React from "react"
 import { Link } from "gatsby"
 import Layout from "../../components/layout"
 import SEO from "../../components/seo"
-import Image from "../../components/image"
 
 const SetupWordpressPage = () => (
 <Layout>
@@ -20,7 +19,7 @@ const SetupWordpressPage = () => (
                     <i className="fal fa-envelope size-50 text-secondary mb-3"></i>
                     <p>Need a project quote or more information about my services?
                         <br/>Click the button below for the fastest 24 hour response.</p>
-                    <Link to="/#contact" className="btn btn-lg btn-success">Contact</Link> 
+                    <Link to="/#contact" className="btn btn-lg btn-primary">Contact</Link> 
                     <small className="d-block text-secondary mt-2">Quick respond in 24 hours or less.</small>
                 </div>
             </div>

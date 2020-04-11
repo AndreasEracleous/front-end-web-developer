@@ -9,16 +9,15 @@ import {FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faWordpress, faHtml5, faCss3Alt, faJs, faReact, faNodeJs, faBootstrap, faSass, faTwitter, faGithub, faLinkedin} from '@fortawesome/free-brands-svg-icons'
 import {faDesktop, faRocket} from '@fortawesome/pro-light-svg-icons'
 
-
 const IndexPage = ({data}) => {
-    const {title, description, socialLinks} = data.site.siteMetadata;
+    const {title, description, occupation, socialLinks} = data.site.siteMetadata;
     const {twitter, linkedin, github} = socialLinks;
 return (    
 <Layout>
-    <SEO title={`Cyprus Freelance Front End Web Developer`} description={description} />   
+    <SEO title={occupation} description={description} />   
         <HeroHeader >
             <div className="row pt-4 pt-lg-5 pb-2 text-white">
-                <div className="col-lg-8">
+                <div className="col-lg-8 order-2 order-lg-0">
                     <h1 className="font-weight-normal text-capitalize">Hi, I'm Andreas 👋</h1>
                     <h2 className="lead">Cyprus Front-end web developer for ReactJS, NodeJS, GatsbyJS and Bootstrap</h2>
                     <p className="font-weight-normal mt-4 mb-3">I'm a front end web developer in Cyprus, who specialises in building <strong>responsive website</strong>, <strong>progressive web application</strong> and <strong>web performance optimization</strong>. Lately, I focused primarily on ReactJS, GatsbyJS, GraphQL and NodeJS development.</p>
@@ -30,8 +29,8 @@ return (
                     */ }
                 </div>
                 
-                <div className="col-lg mt-5 my-lg-auto">
-                    <Image filename="common/andreas.jpg" alt="Andreas Eracleous" className="img-thumbnail border-0 shadow img-fluid mb-1" style={{maxWidth:'160px'}} />
+                <div className="col-lg mb-4 mb-lg-0 mt-5 my-lg-auto order-1 order-lg-0">
+                    <Image filename="common/andreas.jpg" alt="Andreas Eracleous" className="rounded shadow img-fluid mb-1" style={{maxWidth:'160px'}} />
                     <div className="d-flex justify-content-between" style={{maxWidth:'160px'}}>
                     <a href={twitter.link} target="_blank" rel="noopener noreferrer" className="p-1 text-white"><FontAwesomeIcon icon={faTwitter} size="2x" /></a>
                     <a href={linkedin.link} target="_blank" rel="noopener noreferrer" className="p-1 text-white"><FontAwesomeIcon icon={faLinkedin} size="2x" /></a>
@@ -128,7 +127,7 @@ return (
                         <FontAwesomeIcon icon={faWordpress} size="4x" />
                         <h3 className="h5 text-capitalize font-weight-normal my-auto ml-2">Setup WordPress</h3>
                     </header>
-                    <p>WordPress is one of the most popular and reliable platform in the online world, where you easily manage your website without `having any web programming skills.</p>
+                    <p>WordPress is one of the most popular and reliable platform in the online world, where you easily manage your website without having any web programming skills.</p>
                     <p>Have WordPress installed into your hosting account, <strong>fast</strong> without worrying about any technical skills and issues.</p>
                     <Link to="/services/setup-wordpress" className="btn btn-primary mt-auto">Click Here To Learn More</Link>
                 </article>
@@ -153,7 +152,7 @@ return (
 
             <article className="row mt-5">
                 <figure className="col-lg-5">
-                    <Image filename="projects/websites/cryptocoininvest/cryptocoininvest.png" alt="Crypto Coin Invest" className="border-0 img-thumbnail img-fluid shadow" />
+                    <Image filename="projects/websites/cryptocoininvest/cryptocoininvest.png" alt="Crypto Coin Invest" className="rounded img-fluid shadow" />
                 </figure>
                 <div className="col-lg">
                     <header>
@@ -168,7 +167,7 @@ return (
             <article className="row mt-5">
 
                 <figure className="col-lg-5">
-                    <Image filename="projects/websites/energi/energi.png" alt="Energi" className="border-0 img-thumbnail img-fluid shadow" />
+                    <Image filename="projects/websites/energi/energi.png" alt="Energi" className="rounded img-fluid shadow" />
                 </figure>
                 <div className="col-lg">
                     <header>
@@ -183,7 +182,7 @@ return (
             <article className="row mt-5">
 
                 <figure className="col-lg-5">
-                    <Image filename="projects/websites/maida/maida.png" alt="Energi" className="border-0 img-thumbnail img-fluid shadow" />
+                    <Image filename="projects/websites/maida/maida.png" alt="Energi" className="rounded img-fluid shadow" />
                 </figure>
                 <div className="col-lg">
                     <header>

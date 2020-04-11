@@ -2,7 +2,6 @@ import React from "react"
 import Layout from "../components/layout"
 import HeroHeader from "../components/hero-header"
 import SEO from "../components/seo"
-import { h } from "preact"
 
 const AboutPage = ({location}) => (
 <Layout>

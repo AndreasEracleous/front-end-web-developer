@@ -11,7 +11,7 @@ require("dotenv").config({
 module.exports = {
   siteMetadata: {
     title: `Andreas Eracleous`,
-    occupation: `Front end web developer`,
+    occupation: `Front End Web Developer`,
     description: `Andreas is a freelance Front end web developer in Cyprus, who specialises in building responsive website, progressive web application and web performance optimization. Also he is experienced on ReactJS, GatsbyJS, GraphQL and NodeJS development.`,
     siteUrl: `https://andreaseracleous.com`,
     author: `@AndrewEracleous`,
