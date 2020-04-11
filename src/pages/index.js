@@ -247,6 +247,7 @@ query {
         siteMetadata {
             title
             description
+            occupation
           socialLinks {
             facebook {
               name
