@@ -170,11 +170,11 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Andreas Eracleous`,
+        name: `Andreas Eracleous - Front-end web developer`,
         short_name: `Andreas Eracleous`,
         start_url: `/`,
-        background_color: `#0D47A1`,
-        theme_color: `#0D47A1`,
+        background_color: `#2962ff`,
+        theme_color: `#2962ff`,
         display: `minimal-ui`,
         icon: `src/assets/img/icon.png`, // This path is relative to the root of the site.
       },
