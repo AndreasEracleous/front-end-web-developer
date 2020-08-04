@@ -16,7 +16,6 @@
     "gatsby": "^2.24.26",
     "gatsby-cli": "^2.12.71",
     "gatsby-image": "^2.2.31",
-    "gatsby-plugin-analytics-without-segment": "^1.0.7",
     "gatsby-plugin-breadcrumb": "^10.0.0",
     "gatsby-plugin-feed": "^2.3.25",
     "gatsby-plugin-manifest": "^2.2.27",

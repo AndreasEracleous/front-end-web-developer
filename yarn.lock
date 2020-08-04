@@ -2454,14 +2454,6 @@ amdefine@>=0.0.4:
   resolved "https://registry.yarnpkg.com/amdefine/-/amdefine-1.0.1.tgz#4a5282ac164729e93619bcfd3ad151f817ce91f5"
   integrity sha1-SlKCrBZHKek2Gbz9OtFR+BfOkfU=
 
-analytics-js-without-segment@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/analytics-js-without-segment/-/analytics-js-without-segment-1.0.0.tgz#c8ab8692a8d2fb6b55ccdc01eba6bc056630f903"
-  integrity sha512-hOIUY/4X4nFtBkqiJCTP+w/HzmyBLdVdCg5NlM6/uVcaymcvWP2btE/62I5tlo/NWbUPleUygPKCeZS/funagg==
-  dependencies:
-    lodash "^4.17.11"
-    terser "^3.10.2"
-
 ansi-align@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/ansi-align/-/ansi-align-3.0.0.tgz#b536b371cf687caaef236c18d3e21fe3797467cb"
@@ -4153,7 +4145,7 @@ command-exists@^1.2.4:
   resolved "https://registry.yarnpkg.com/command-exists/-/command-exists-1.2.9.tgz#c50725af3808c8ab0260fd60b01fbfa25b954f69"
   integrity sha512-LTQ/SGc+s0Xc0Fu5WaKnR0YiygZkm9eKFvyS+fRsU7/ZWFF8ykFM6Pc9aCVf1+xasOOZpO3BAVgVrKvsqKHV7w==
 
-commander@^2.19.0, commander@^2.20.0, commander@^2.20.3, commander@^2.8.1:
+commander@^2.20.0, commander@^2.20.3, commander@^2.8.1:
   version "2.20.3"
   resolved "https://registry.yarnpkg.com/commander/-/commander-2.20.3.tgz#fd485e84c03eb4881c20722ba48035e8531aeb33"
   integrity sha512-GpVkmM8vF2vQUkj2LvZmD35JxeJOLCwJ9cUkugyk2nuhbv3+mJvpLYYt+0+USMxE+oj+ey/lJEnhZw75x/OMcQ==
@@ -6699,13 +6691,6 @@ gatsby-page-utils@^0.2.19:
     glob "^7.1.6"
     lodash "^4.17.15"
     micromatch "^3.1.10"
-
-gatsby-plugin-analytics-without-segment@^1.0.7:
-  version "1.0.7"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-analytics-without-segment/-/gatsby-plugin-analytics-without-segment-1.0.7.tgz#7d9dcf69e124a58c861e11d52e239dab33e66682"
-  integrity sha512-ecsaAHp/3hMHF52oGvpXGwL/a6vDyNPiXPa9MmpLxSDbFh72NAVgnjVLSzoYKXmM5Oys0WaZCeYzAjWLn51nKw==
-  dependencies:
-    analytics-js-without-segment "^1.0.0"
 
 gatsby-plugin-breadcrumb@^10.0.0:
   version "10.0.0"
@@ -13631,7 +13616,7 @@ source-map-resolve@^0.5.0:
     source-map-url "^0.4.0"
     urix "^0.1.0"
 
-source-map-support@~0.5.10, source-map-support@~0.5.12:
+source-map-support@~0.5.12:
   version "0.5.19"
   resolved "https://registry.yarnpkg.com/source-map-support/-/source-map-support-0.5.19.tgz#a98b62f86dcaf4f67399648c085291ab9e8fed61"
   integrity sha512-Wonm7zOCIJzBGQdB+thsPar0kYuCIzYvxZwlBa87yi/Mdjv7Tip2cyVbLj5o0cFPN4EVkuTwb3GDDyUx2DGnGw==
@@ -14343,15 +14328,6 @@ terser-webpack-plugin@^1.4.3, terser-webpack-plugin@^1.4.4:
     terser "^4.1.2"
     webpack-sources "^1.4.0"
     worker-farm "^1.7.0"
-
-terser@^3.10.2:
-  version "3.17.0"
-  resolved "https://registry.yarnpkg.com/terser/-/terser-3.17.0.tgz#f88ffbeda0deb5637f9d24b0da66f4e15ab10cb2"
-  integrity sha512-/FQzzPJmCpjAH9Xvk2paiWrFq+5M6aVOf+2KRbwhByISDX/EujxsK+BAvrhb6H+2rtrLCHK9N01wO014vrIwVQ==
-  dependencies:
-    commander "^2.19.0"
-    source-map "~0.6.1"
-    source-map-support "~0.5.10"
 
 terser@^4.1.2:
   version "4.8.0"

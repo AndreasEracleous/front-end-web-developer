@@ -153,20 +153,7 @@ module.exports = {
         sitemap: 'https://andreaseracleous.com/sitemap.xml',
         policy: [{ userAgent: '*', allow: '/' }]
       }
-    },    
-    {
-      resolve: 'gatsby-plugin-analytics-without-segment',
-      options: {
-        cdnUrl: `https://cdnjs.cloudflare.com/ajax/libs/analytics.js/2.9.1/analytics.min.js`,  // host yourself or use cdnjs (https://cdnjs.com/libraries/analytics.js)
-        services: {
-          // see integration https://github.com/segment-integrations/analytics.js-integration-google-analytics/blob/master/lib/index.js
-          'Google Analytics': {
-            trackingId: process.env.GATSBY_GOOGLE_ANALYTICS_TRACKING_ID,
-            anonymizeIp: true,
-          },
-        },
-      },
-    },    
+    },      
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
