@@ -27,6 +27,10 @@ body::-webkit-scrollbar {
     z-index: 2;
 }
 
+.lead {
+    font-size: 1.2rem;
+}
+
 .nav-link {
     padding: .5rem .8rem;
 }
@@ -142,6 +146,7 @@ body::-webkit-scrollbar {
 
 .breadcrumb__list {
     list-style: none;
+    padding: 0;
 }
 
 .breadcrumb__item {

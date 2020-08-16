@@ -17,10 +17,10 @@ return (
     <SEO title={occupation} description={description} />   
         <HeroHeader >
             <div className="row pt-4 pt-lg-5 pb-2 text-white">
-                <div className="col-lg-8 order-2 order-lg-0">
+                <div className="col-md-8 order-2 order-lg-0">
                     <h1 className="font-weight-normal text-capitalize">Hi, I'm Andreas 👋</h1>
-                    <h2 className="lead">Cyprus Front-end web developer for ReactJS, NodeJS, GatsbyJS and Bootstrap</h2>
-                    <p className="font-weight-normal mt-4 mb-3">I'm a front end web developer in Cyprus, who specialises in building <strong>responsive website</strong>, <strong>progressive web application</strong> and <strong>web performance optimization</strong>. Lately, I focused primarily on ReactJS, GatsbyJS, GraphQL and NodeJS development.</p>
+                    <p className="m-0"><mark className="lead shadow-sm"><span className="font-weight-bold">Front-end web developer</span> for ReactJS, NodeJS, GatsbyJS and Bootstrap</mark></p>
+                    <p className="font-weight-normal mt-4 p-0 mb-0 mb-md-3">I'm a front end web developer in Cyprus, who specialises in building <strong>responsive website</strong>, <strong>progressive web application</strong> and <strong>web performance optimization</strong>. Lately, I focused primarily on ReactJS, GatsbyJS, GraphQL and NodeJS development.</p>
                     { /*
                     <div className="d-flex">
                         <a href="#" className="btn btn-outline-light px-4 mr-3">Contact me</a>
@@ -29,8 +29,8 @@ return (
                     */ }
                 </div>
                 
-                <div className="col-lg mb-4 mb-lg-0 mt-5 my-lg-auto order-1 order-lg-0">
-                    <Image filename="common/andreas.jpg" alt="Andreas Eracleous" className="rounded shadow img-fluid mb-1" style={{maxWidth:'160px'}} />
+                <div className="col-md mb-4 mb-lg-0 my-lg-auto order-1 order-lg-0">
+                    <Image filename="common/andreas.jpg" alt="Andreas Eracleous" className="rounded shadow mb-1" style={{maxWidth:'160px'}} />
                     <div className="d-flex justify-content-between" style={{maxWidth:'160px'}}>
                     <a href={twitter.link} target="_blank" rel="noopener noreferrer" className="p-1 text-white"><FontAwesomeIcon icon={faTwitter} size="2x" /></a>
                     <a href={linkedin.link} target="_blank" rel="noopener noreferrer" className="p-1 text-white"><FontAwesomeIcon icon={faLinkedin} size="2x" /></a>
@@ -38,8 +38,8 @@ return (
                     </div>
                 </div>
             </div>
-            <hr/>
-            <div className="d-flex flex-wrap">
+            <hr className="d-none d-md-block" />
+            <div className="d-none d-md-flex flex-wrap">
                 <p className="my-auto font-weight-normal m-0 text-white">I'M GREAT AT:</p>
                 <div className="d-flex flex-wrap text-center text-white">
                     <div className="d-flex flex-column">
@@ -74,12 +74,7 @@ return (
             </div>
             <hr/>
             <p className="text-white font-weight-normal mt-3 mb-0">Specialize in front end development with knowledge in back end development.</p>
-        </HeroHeader>
-        <div className="bg-opacity py-2 text-dark">
-            <div className="d-flex container">
-                <p className="font-weight-normal my-0">Top Rated Freelancer on <a href="https://www.upwork.com/fl/andreaseracleous" target="_blank" rel="noopener noreferrer" className="text-primary">UpWork</a></p>
-            </div>
-        </div>     
+        </HeroHeader>  
 {
     /*
     <section id="about" className="container mt-5">
@@ -142,6 +137,7 @@ return (
         <p className="m-0">I have a strong desire to make sure you are happy and I won’t disappoint you.</p>
         <hr/>
         <p>I am currently available on UpWork for front-end development jobs. I can help you with: <strong>website performance optimization</strong>, <strong>Wordpress site</strong> and <strong>conversion design to Bootstrap</strong>, <strong>HTML, CSS, JS code</strong> in which adaptive and <strong>responsive templates</strong> for all devices by using the latest web technologies.</p>
+        <p className="p-0 m-0">Top Rated Freelancer on <a href="https://www.upwork.com/fl/andreaseracleous" target="_blank" rel="noopener noreferrer">UpWork</a></p>
         </article>
     </section>
     
@@ -152,7 +148,7 @@ return (
 
             <article className="row mt-5">
                 <figure className="col-lg-5">
-                    <Image filename="projects/websites/cryptocoininvest/cryptocoininvest.png" alt="Crypto Coin Invest" className="rounded img-fluid shadow" />
+                    <Image filename="projects/websites/cryptocoininvest/cryptocoininvest.png" alt="Crypto Coin Invest" className="rounded shadow" />
                 </figure>
                 <div className="col-lg">
                     <header>
@@ -167,7 +163,7 @@ return (
             <article className="row mt-5">
 
                 <figure className="col-lg-5">
-                    <Image filename="projects/websites/energi/energi.png" alt="Energi" className="rounded img-fluid shadow" />
+                    <Image filename="projects/websites/energi/energi.png" alt="Energi" className="rounded shadow" />
                 </figure>
                 <div className="col-lg">
                     <header>
@@ -182,7 +178,7 @@ return (
             <article className="row mt-5">
 
                 <figure className="col-lg-5">
-                    <Image filename="projects/websites/maida/maida.png" alt="Energi" className="rounded img-fluid shadow" />
+                    <Image filename="projects/websites/maida/maida.png" alt="Energi" className="rounded shadow" />
                 </figure>
                 <div className="col-lg">
                     <header>
@@ -205,14 +201,14 @@ return (
         <div className="row">
             <div className="col-md-6 col-lg">
                 <blockquote className="bg-white shadow rounded p-4 mt-4">
-                    <Image filename="testimonials/ryan-goodman.jpeg" alt="Ryan Goodman" className="img-fluid mx-auto rounded-circle" style={{width: '100px'}} />
+                    <Image filename="testimonials/ryan-goodman.jpeg" alt="Ryan Goodman" className="mx-auto rounded-circle" style={{width: '100px'}} />
                     <h4 className="h5 mt-3 font-weight-normal">Ryan Goodman</h4>
                     <p className="font-weight-light">I have worked with Andreas for over a year on various JavaScript based applications. He is everything you want in a developer. He is consistent, asks the right questions, is clever, and always seems to get the job done right. He has assisted me in many customer projects requiring HTML5 / Javascript dashboards and transactional apps. I highly recommend Andreas.</p>
                 </blockquote>
             </div>
             <div className="col-md-6 col-lg">
                 <blockquote className="bg-white shadow rounded p-4 mt-4">
-                    <Image filename="testimonials/joel-ahern.jpeg" alt="Joel Ahern" className="img-fluid mx-auto rounded-circle" style={{width: '100px'}} />
+                    <Image filename="testimonials/joel-ahern.jpeg" alt="Joel Ahern" className="mx-auto rounded-circle" style={{width: '100px'}} />
                     <h4 className="h5 mt-3 font-weight-normal">Joel Ahern</h4>
                     <p className="font-weight-light">Of the 20 something web developers &amp; digital marketers I have used for various tasks in the past year, Andreas is the first person I talk to when I have an idea. He takes ideas and makes them better than you were originally thinking and he never asks you to review something that isn't finished.</p>
                     <p className="font-weight-light">The quality of his code and creativity is worlds class. It's a joy to work with someone where things get done to such high quality without the need for lots of revisions. He has a bright future ahead of him, but for as long as he is available, he is my go to dev.</p>
@@ -220,7 +216,7 @@ return (
             </div>
             <div className="col-md-6 col-lg">
                 <blockquote className="bg-white shadow rounded p-4 mt-4">
-                    <Image filename="testimonials/justin-atlan.jpeg" alt="Justin Atlan" className="img-fluid mx-auto rounded-circle" style={{width: '100px'}} />
+                    <Image filename="testimonials/justin-atlan.jpeg" alt="Justin Atlan" className="mx-auto rounded-circle" style={{width: '100px'}} />
                     <h4 className="h5 mt-3 font-weight-normal">Justin Atlan</h4>
                     <p className="font-weight-light">Andreas, thanks so much for being our go to guy to get anything front-end up on the web as fast and efficiently as possible. You always go the extra mile and you always over-deliver. Thanks for being a great part of our team whenever we need you!</p>
                 </blockquote>
