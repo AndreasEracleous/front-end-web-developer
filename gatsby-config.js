@@ -173,9 +173,16 @@ module.exports = {
       options: {
         printRejected: true, // Print removed selectors and processed file names
         develop: true, // Enable while using `gatsby develop`
-        whitelist: ['breadcrumb', 'breadcrumb__title', 'breadcrumb__link', 'breadcrumb__separator', 'breadcrumb__link__active'], // Don't remove this selector
+        whitelist: ['breadcrumb', 'breadcrumb__list', 'breadcrumb__list__item','breadcrumb__item','breadcrumb__title', 'breadcrumb__link', 'breadcrumb__separator', 'breadcrumb__link__active'], // Don't remove this selector
       }
-    },       
+    },   
+    {
+      resolve: `gatsby-plugin-preconnect`,
+      options: {
+        domains: ['//www.googletagmanager.com', '//d33wubrfki0l68.cloudfront.net', '//www.google-analytics.com'],
+      },
+    },    
+    `gatsby-plugin-preact`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-netlify`,
     `gatsby-plugin-sitemap`,

@@ -140,6 +140,14 @@ body::-webkit-scrollbar {
     transform: none;
 }
 
+.breadcrumb__list {
+    list-style: none;
+}
+
+.breadcrumb__item {
+    display: inline;
+}
+
 @media(min-width:768px) {
     .site-name {
         font-size: 1.50rem;

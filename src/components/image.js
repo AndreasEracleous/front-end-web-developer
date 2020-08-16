@@ -12,8 +12,8 @@ const Image = (props) => (
               relativePath
               name
               childImageSharp {
-                sizes (maxWidth: 700, quality: 60) {
-                  ...GatsbyImageSharpSizes
+                fluid (maxWidth: 768, quality: 85) {
+                  ...GatsbyImageSharpFluid
                 }
               }
             }
@@ -27,11 +27,11 @@ const Image = (props) => (
         return n.node.relativePath.includes(props.filename);
       });
       if (!image) { return null; }
-      const imageSizes = image.node.childImageSharp.sizes;
+      const imageFluid = image.node.childImageSharp.fluid;
       //console.log(props)
       return (
           <Img 
-            sizes={imageSizes}
+          fluid={imageFluid}
             {...props}
           />
       );
