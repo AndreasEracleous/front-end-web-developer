@@ -18,8 +18,8 @@ return (
         <HeroHeader >
             <div className="row pt-4 pt-lg-5 pb-2 text-white">
                 <div className="col-md-8 order-2 order-lg-0">
-                    <h1 className="font-weight-normal text-capitalize">Hi, I'm Andreas 👋</h1>
-                    <p className="m-0"><mark className="lead shadow-sm"><span className="font-weight-bold">Front-end web developer</span> for ReactJS, NodeJS, GatsbyJS and Bootstrap</mark></p>
+                    <p className="h1 font-weight-normal text-capitalize">Hi, I'm Andreas 👋</p>
+                    <h1 className="lead"><mark className="shadow-sm"><span className="font-weight-bold">Front-end web developer</span> for ReactJS, NodeJS, GatsbyJS and Bootstrap</mark></h1>
                     <p className="font-weight-normal mt-4 p-0 mb-0 mb-md-3">I'm a front end web developer in Cyprus, who specialises in building <strong>responsive website</strong>, <strong>progressive web application</strong> and <strong>web performance optimization</strong>. Lately, I focused primarily on ReactJS, GatsbyJS, GraphQL and NodeJS development.</p>
                     { /*
                     <div className="d-flex">
@@ -91,7 +91,7 @@ return (
 
     <section id="services" className="container mt-5 pb-5">
 
-        <h3 className="h4 font-weight-normal text-uppercase ">WHAT I OFFER</h3>
+        <h2 className="h4 font-weight-normal text-uppercase ">WHAT I OFFER</h2>
         <div className="row">
             <div className="col-md-6 col-lg mt-4">
                 <article className="d-flex flex-column bg-white shadow rounded p-4 h-100">
