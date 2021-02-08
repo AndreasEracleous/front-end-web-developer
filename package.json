@@ -71,10 +71,6 @@
 		"react-test-renderer": "^16.13.1",
 		"stylelint-config-standard": "^20.0.0"
 	},
-	"engines": {
-		"node": ">=12",
-		"yarn": ">=1.22"
-	},
 	"husky": {
 		"hooks": {
 			"pre-commit": "lint-staged"
