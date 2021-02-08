@@ -1,0 +1,23 @@
+{
+	"extends": ["airbnb", "airbnb/hooks", "prettier", "prettier/react"],
+	"plugins": ["jest", "prettier"],
+	"parser": "babel-eslint",
+	"rules": {
+		"import/no-unresolved": "off",
+		"prettier/prettier": "error",
+		"no-await-in-loop": "off",
+		"no-param-reassign": "off",
+		"no-shadow": "off",
+		"no-new": "off",
+		"no-underscore-dangle": "off",
+		"quote-props": ["error", "as-needed"],
+		"react/forbid-prop-types": "off",
+		"react/destructuring-assignment": "off",
+		"react/jsx-props-no-spreading": "off",
+		"react/jsx-filename-extension": "off"
+	},
+	"env": {
+		"browser": true,
+		"jest/globals": true
+	}
+}

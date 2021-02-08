@@ -4,11 +4,12 @@
  * See: https://www.gatsbyjs.org/docs/browser-apis/
  */
 
-//import "./src/assets/scss/main.scss"
+// import "./src/assets/scss/main.scss"
 
 // Load Nunito Sans typeface
-//require('typeface-nunito-sans')
+// require('typeface-nunito-sans')
 
+/*
 exports.shouldUpdateScroll = ({
 routerProps: { location },
 getSavedScrollPosition
@@ -37,3 +38,4 @@ function anchorScroll(location) {
         window.scrollTo(0, 0);
     }
 }
+*/

@@ -1,7 +1,9 @@
 // Bootstrap custom theme
-$theme-colors: ("primary": #2962ff,
-  "secondary": #757575,
-  "success" : #9ccc65);
+$theme-colors: ("primary": #006aff,
+   "dark": #031b4e,
+  "secondary": #5b6987,
+  "success" : #9ccc65,
+  "warning": #ffc107);
 $grid-gutter-width: 24px;
 
 @import 'bootstrap.custom';
